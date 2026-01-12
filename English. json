@@ -1,722 +1,162 @@
-const rawQuestions = [
+[
   {
     "id": 1,
     "type": "单选题",
-    "q": "This research has attracted wide_____ coverage (这项调查吸引了新闻媒介的广泛报道。)",
+    "q": "This research has attracted wide_____ coverage",
     "options": ["message", "information", "media", "data"],
     "ans": "C",
-    "exp": "【选项释义】A. message (n. 信息/口信)；B. information (n. 信息/资料)；C. media (n. 媒体/新闻媒介)；D. data (n. 数据)。【解析】空格处需填入一个修饰 coverage (报道) 的词。media coverage 是固定搭配，意为“媒体报道”。A、B、D虽都有“信息”含义，但不能与 coverage 搭配表示“新闻报道”。故选 C。"
+    "exp": "翻译：这项调查吸引了新闻媒介的广泛报道。解析：A. message [n. 信息/口信]；B. information [n. 信息/资料]；C. media [n. 媒体/新闻媒介]；D. data [n. 数据]。【为什么选C】：'media coverage' 是英语中的固定搭配，专门指“媒体报道”。【为什么不选ABD】：虽然 message、information 和 data 都有“信息”的意思，但它们都不能和 coverage 组合成“新闻报道”的意思。"
   },
   {
     "id": 2,
     "type": "单选题",
-    "q": "Their products are frequently overpriced and_____ in quality. (他们的产品常常要价太高，而质量低劣。)",
+    "q": "Their products are frequently overpriced and_____ in quality.",
     "options": ["influential", "inferior", "superior", "subordinate"],
     "ans": "B",
-    "exp": "【选项释义】A. influential (adj. 有影响力的)；B. inferior (adj. 较差的/低劣的)；C. superior (adj. 优良的/卓越的)；D. subordinate (adj. 从属的/下级的)。【解析】句中用 and 连接两个贬义特征，overpriced (要价过高) 暗示质量不好。inferior in quality 指“质量低劣”。superior 是反义词（质量好），influential 和 subordinate 语境不符。故选 B。"
+    "exp": "翻译：他们的产品常常要价太高，而质量低劣。解析：A. influential [adj. 有影响力的]；B. inferior [adj. 较差的/低劣的]；C. superior [adj. 优秀的/上等的]；D. subordinate [adj. 从属的/下级的]。【为什么选B】：句中用 'and' 连接了两个贬义词。'overpriced' 是“要价过高（贬义）”，所以空格处也要选一个形容质量不好的贬义词，'inferior' 表示质量低劣，正好匹配。【为什么不选ACD】：influential 是褒义词；superior 是“优质的”，与语境相反；subordinate 指职位高低，不能形容质量。"
   },
   {
     "id": 3,
     "type": "单选题",
-    "q": "There is no doubt that the_____ of these goods to the others is easy to see. (毫无疑问，与其他货物相比，这些货物的优越性显而易见。)",
+    "q": "There is no doubt that the_____ of these goods to the others is easy to see.",
     "options": ["prestige", "superiority", "priority", "publicity"],
     "ans": "B",
-    "exp": "【选项释义】A. prestige (n. 声望/威信)；B. superiority (n. 优越性/优势)；C. priority (n. 优先权/优先事项)；D. publicity (n. 宣传/公众关注)。【解析】句中提到这些货物与“其他货物”对比，且“显而易见”，对应“优越性”。superiority of A to B 是固定结构，意为“A优于B”。故选 B。"
+    "exp": "翻译：毫无疑问，与其他货物相比，这些货物的优越性显而易见。解析：A. prestige [n. 声望/威望]；B. superiority [n. 优越性/优势]；C. priority [n. 优先权]；D. publicity [n. 宣传/关注度]。【为什么选B】：'superiority to...' 是固定用法，表示“比...优越”。这句话是在对比不同货物的质量。【为什么不选ACD】：prestige 通常形容人的名声；priority 指时间或重要性上的优先（如：优先级）；publicity 指广告或媒体的宣传，都不符合“货物质量更好”的语境。"
   },
   {
     "id": 4,
     "type": "单选题",
-    "q": "Niagara Fall is a great tourist ______ drawing millions of visitors every year. (尼亚加拉瀑布是一个对游客有巨大吸引力的地方，每年都吸引上百万的游人。)",
+    "q": "Niagara Fall is a great tourist ______ drawing millions of visitors every year.",
     "options": ["attention", "attraction", "appointment", "arrangement"],
     "ans": "B",
-    "exp": "【选项释义】A. attention (n. 注意力)；B. attraction (n. 吸引人的事物/景点)；C. appointment (n. 约会/任命)；D. arrangement (n. 安排)。【解析】tourist attraction 是固定搭配，专指“旅游景点”。A、C、D项放入句中逻辑不通。故选 B。"
+    "exp": "翻译：尼亚加拉瀑布是一个伟大的旅游胜地，每年吸引数百万游客。解析：A. attention [n. 注意力]；B. attraction [n. 吸引力/名胜]；C. appointment [n. 约会/任命]；D. arrangement [n. 安排]。【为什么选B】：'tourist attraction' 是固定搭配，专指“旅游景点”或“名胜”。【为什么不选ACD】：attention 指人的注意力；appointment 指工作上的预约；arrangement 指对事情的排班或布置，都不能用来称呼一个风景区。"
   },
   {
     "id": 5,
     "type": "单选题",
-    "q": "The hopes, goals, fears and desires widely______ between men and women, between the rich and the poor. (希望、目标、恐惧、愿望在男女、贫富之间是不同的。)",
+    "q": "The hopes, goals, fears and desires widely______ between men and women, between the rich and the poor.",
     "options": ["alter", "shift", "transfer", "vary"],
     "ans": "D",
-    "exp": "【选项释义】A. alter (v. 改变/微调)；B. shift (v. 移动/转变)；C. transfer (v. 转移/调动)；D. vary (v. 呈现差异/不同)。【解析】vary between A and B 意为“在A和B之间存在差异/不同”，符合句意。alter 指局部改动，shift 指位置或焦点的移动，transfer 指从一个地方转到另一个地方。故选 D。"
+    "exp": "翻译：希望、目标、恐惧和愿望在男女之间、贫富之间存在着广泛的差异。解析：A. alter [v. 修改/改变]；B. shift [v. 移动/变换]；C. transfer [v. 转移/转让]；D. vary [v. 不同/呈现差异]。【为什么选D】：'vary' 常用于描述不同人群、事物之间存在性质或程度上的“不同”。句中提到男女、贫富的愿望不同，用 vary 最准确。【为什么不选ABC】：alter 指对衣服或计划的小修小改；shift 指位置的平移（如按 shift 键切换）；transfer 指人或物的物理搬运（如转学、调动）。"
   },
   {
     "id": 6,
     "type": "单选题",
-    "q": "He hoped the firm would_____ him to the Paris branch. (他希望公司能将他调到巴黎的分公司。)",
+    "q": "He hoped the firm would_____ him to the Paris branch.",
     "options": ["exchange", "transmit", "transfer", "remove"],
     "ans": "C",
-    "exp": "【选项释义】A. exchange (v. 交换)；B. transmit (v. 传输信号/传播疾病)；C. transfer (v. 调动工作/转职)；D. remove (v. 移开/开除)。【解析】transfer him to the branch 意为“将他调往分公司”，符合职业调动的语境。故选 C。"
+    "exp": "翻译：他希望公司能将他调往巴黎分公司。解析：A. exchange [v. 交换]；B. transmit [v. 传播/发射信号]；C. transfer [v. 调动/转职]；D. remove [v. 移开/开除]。【为什么选C】：在职场中，把员工从一个部门或城市调动到另一个部门，专有名词就是 'transfer'。【为什么不选ABD】：exchange 是东西换东西（如：换钱）；transmit 指电波或疾病的传染；remove 是把东西拿走，如果用在人身上通常指撤职。"
   },
   {
     "id": 7,
     "type": "单选题",
-    "q": "Mass advertising helped to______ the emphasis from the production of goods to their consumption. (大众广告有助于将重点从生产转移到消费。)",
+    "q": "Mass advertising helped to______ the emphasis from the production of goods to their consumption.",
     "options": ["vary", "shift", "lay", "moderate"],
     "ans": "B",
-    "exp": "【选项释义】A. vary (v. 变化)；B. shift (v. 转移/转换)；C. lay (v. 放置/产卵)；D. moderate (v. 缓和)。【解析】shift the emphasis from... to... 是固定搭配，表示“将重点从……转移到……”。vary 指多样化，lay 后面常接具体物体。故选 B。"
+    "exp": "翻译：大众广告有助于将重点从产品生产转向产品消费。解析：A. vary [v. 变化]；B. shift [v. 转移/转变]；C. lay [v. 放置/铺设]；D. moderate [v. 缓和/节制]。【为什么选B】：'shift the emphasis from... to...' 是固定表达，意为“将重心/重点从...转向...”。【为什么不选ACD】：vary 强调多样化；lay 通常接基础（lay the foundation）；moderate 意为使事情变得温和，不符合重点转移的逻辑。"
   },
   {
     "id": 8,
     "type": "单选题",
-    "q": "Corn originated in the New World and thus was not known in Europe until Columbus found it being ______ in Cuba. (玉米源于新大陆；直到哥伦布在古巴发现它被种植，才被欧洲人知道。)",
+    "q": "Corn originated in the New World and thus was not known in Europe until Columbus found it being ______ in Cuba.",
     "options": ["cultivated", "circulated", "celebrated", "calculated"],
     "ans": "A",
-    "exp": "【选项释义】A. cultivated (v. 种植/栽培)；B. circulated (v. 循环/流通)；C. celebrated (v. 庆祝)；D. calculated (v. 计算)。【解析】这里指玉米作为农作物被“种植”。cultivate 专门用于农业生产。故选 A。"
+    "exp": "翻译：玉米起源于新大陆，因此直到哥伦布在古巴发现它被种植，欧洲人才知道它。解析：A. cultivated [v. 耕作/种植]；B. circulated [v. 循环/流通]；C. celebrated [v. 庆祝]；D. calculated [v. 计算]。【为什么选A】：描述农作物在土地上被培育、种出来，专业词汇是 'cultivate'。【为什么不选BCD】：circulated 指货币或血液在流动；celebrated 指过节庆祝；calculated 指用数学算数，都不能用来形容庄稼地里的玉米。"
   },
   {
     "id": 9,
     "type": "单选题",
-    "q": "The words of his old teacher left a ______ impression on his mind. (老师的话在他心里留下了永久的印象。)",
+    "q": "The words of his old teacher left a ______ impression on his mind. He is still influenced by them.",
     "options": ["long", "lively", "lasting", "liberal"],
     "ans": "C",
-    "exp": "【选项释义】A. long (adj. 长的)；B. lively (adj. 活泼的)；C. lasting (adj. 持久的/永久的)；D. liberal (adj. 自由的/开明的)。【解析】a lasting impression 是固定搭配，意为“持久的印象”。long 通常描述长度或时长，但不直接修饰印象；lively 形容人或气氛。故选 C。"
+    "exp": "翻译：老老师的话在他心中留下了持久的印象。他至今仍受其影响。解析：A. long [adj. 长的]；B. lively [adj. 活泼的]；C. lasting [adj. 持久的/永久的]；D. liberal [adj. 自由的/开明的]。【为什么选C】：'lasting impression' 是固定用法，指“深刻且挥之不去的印象”。后半句提到“至今受影响”印证了这一点。【为什么不选ABD】：long 指长度；lively 形容气氛活跃；liberal 指思想观念开放，都不适合修饰“印象”的深度和时长。"
   },
   {
     "id": 10,
     "type": "单选题",
-    "q": "What you say now is not_________ with what you said last week. (你现在所说的与你上星期说的不一致。)",
+    "q": "What you say now is not_________ with what you said last week.",
     "options": ["consistent", "persistent", "permanent", "insistent"],
     "ans": "A",
-    "exp": "【选项释义】A. consistent (adj. 一致的)；B. persistent (adj. 执着的/持续的)；C. permanent (adj. 永久的)；D. insistent (adj. 坚持要求的)。【解析】be consistent with 是固定短语，表示“与……一致”。persistent 指人的毅力，permanent 指性质永久，insistent 指态度坚决。故选 A。"
+    "exp": "翻译：你现在所说的与你上周所说的不一致。解析：A. consistent [adj. 一致的/相符的]；B. persistent [adj. 坚持不懈的]；C. permanent [adj. 永久的/固定的]；D. insistent [adj. 坚持要求的]。【为什么选A】：'be consistent with' 是固定搭配，表示“与...相符合/前后一致”。【为什么不选BCD】：persistent 形容人很有毅力；permanent 形容东西一直存在（如永久居留）；insistent 形容某人强硬地要求某事，都不能表达“前后说法对得上”的意思。"
   },
   {
     "id": 11,
     "type": "单选题",
-    "q": "How did they_____ to the news? (他们如何回应这则新闻？)",
+    "q": "How did they_____ to the news?",
     "options": ["restore", "shatter", "respond", "practice"],
     "ans": "C",
-    "exp": "【选项释义】A. restore (v. 恢复/修复)；B. shatter (v. 破碎)；C. respond (v. 回应/回答)；D. practice (v. 练习)。【解析】respond to sth. 是固定短语，表示“对某事做出反应/回应”。其他动词均不与 to 搭配形成此语境。故选 C。"
+    "exp": "翻译：他们对这则消息有什么反应？解析：A. restore [v. 恢复/修复]；B. shatter [v. 粉碎]；C. respond [v. 回应/反应]；D. practice [v. 练习]。【为什么选C】：'respond to' 表示对某事、某消息做出回应或反应。【为什么不选ABD】：restore 是把坏了的东西修好；shatter 是把玻璃等摔得粉碎；practice 是日常练习功课，都不符合面对新闻时的心态表达。"
   },
   {
     "id": 12,
     "type": "单选题",
-    "q": "A person's calorie requirements vary_________ his life. (一个人对热量的需求在整个一生中都在变化。)",
+    "q": "A person's calorie requirements vary_________ his life.",
     "options": ["across", "throughout", "over", "within"],
     "ans": "B",
-    "exp": "【选项释义】A. across (prep. 跨越/在对面)；B. throughout (prep. 贯穿/遍及)；C. over (prep. 在……之上/超过)；D. within (prep. 在……之内)。【解析】throughout his life 是固定表达，意为“贯穿一生/终其一生”。故选 B。"
+    "exp": "翻译：一个人对热量的需求在整个生命过程中是变化的。解析：A. across [prep. 穿过/横跨]；B. throughout [prep. 贯穿整个.../在...期间]；C. over [prep. 在...之上/经过]；D. within [prep. 在...之内]。【为什么选B】：'throughout his life' 是地道表达，意为“纵观一生/在整个人生阶段中”。【为什么不选ACD】：across 侧重从一边到另一边；over 虽也能指时间，但不如 throughout 强调“从头到尾的整个过程”；within 指在某个时间点之内。"
   },
   {
     "id": 13,
     "type": "单选题",
-    "q": "Some diseases are______ by certain water animals. (一些疾病是通过某些水生动物传播的。)",
+    "q": "Some diseases are______ by certain water animals.",
     "options": ["transplanted", "transformed", "transported", "transmitted"],
     "ans": "D",
-    "exp": "【选项释义】A. transplanted (v. 移植)；B. transformed (v. 转化/变形)；C. transported (v. 运输)；D. transmitted (v. 传播/传染)。【解析】transmit 专门用于疾病的“传播”或信号的“发射”。其他选项：transplant 指器官或植物移植，transport 指货运。故选 D。"
+    "exp": "翻译：一些疾病是通过某些水生动物传播的。解析：A. transplanted [v. 移植/移种]；B. transformed [v. 彻底改变/变换]；C. transported [v. 运输/运送]；D. transmitted [v. 传播/传递]。【为什么选D】：在英语中，描述疾病、信号、知识的“传播”，统统用 transmit。【为什么不选ABC】：transplanted 多指器官移植；transformed 指像变形金刚一样的外观性质大变；transported 指用车马货运运送物资。"
   },
   {
     "id": 14,
     "type": "单选题",
-    "q": "The child’s face ______ with joy when he saw the birthday cake (当那个孩子看到生日蛋糕时，脸上洋溢着快乐的笑容。)",
+    "q": "The child’s face ______ with joy when he saw the birthday cake",
     "options": ["shone", "glowed", "beamed", "grinned"],
     "ans": "C",
-    "exp": "【选项释义】A. shone (v. 发光/照耀)；B. glowed (v. 发微光/红光)；C. beamed (v. 眉开眼笑/洋溢喜悦)；D. grinned (v. 露齿而笑)。【解析】beam with joy 是固定短语，形容因极度高兴而“喜笑颜开”。shone 指光亮，glowed 强调红润或微光，grin 仅指笑容的动作。故选 C。"
+    "exp": "翻译：当那个孩子看到生日蛋糕时，脸上洋溢着喜悦。解析：A. shone [v. 发光]；B. glowed [v. 发红光/发热]；C. beamed [v. 眉开眼笑/神采奕奕]；D. grinned [v. 露齿而笑]。【为什么选C】：'beam with joy' 是一个非常生动的词组，形容人因为太开心而整个人闪闪发光、满脸堆笑。【为什么不选ABD】：shone 常指手电筒或太阳发光；glowed 指脸红或炭火微亮；grinned 只是一个咧嘴笑的动作，没有 beam 表达出的那种“喜气洋洋”的氛围。"
   },
   {
     "id": 15,
     "type": "单选题",
-    "q": "Be careful not to ______ the coffee on the important documents. (小心别把咖啡洒在重要文件上。)",
+    "q": "Be careful not to ______ the coffee on the important documents.",
     "options": ["splash", "pour", "spill", "leak"],
     "ans": "C",
-    "exp": "【选项释义】A. splash (v. 溅起)；B. pour (v. 倒/倾泻)；C. spill (v. 溢出/洒出)；D. leak (v. 泄露/渗漏)。【解析】spill 指由于不小心使液体“流出、洒出”。pour 指有意识地“倒”，splash 指液体受冲击飞溅，leak 指容器有洞而渗漏。故选 C。"
+    "exp": "翻译：当心别把咖啡洒在重要文件上。解析：A. splash [v. 溅起]；B. pour [v. 倾倒]；C. spill [v. 溢出/洒出]；D. leak [v. 漏出]。【为什么选C】：'spill' 特指由于不小心，让容器里的液体倒了出来、弄洒了。【为什么不选ABD】：splash 强调水花乱飞；pour 指主动、有目的地倒水（如倒茶）；leak 指容器破了个洞，水慢慢渗出来。"
   },
   {
     "id": 16,
     "type": "单选题",
-    "q": "She plays a ______ role in the research team, leading all the major projects. (她在研究团队中扮演着突出的角色，领导所有主要项目。)",
+    "q": "She plays a ______ role in the research team, leading all the major projects.",
     "options": ["dominant", "important", "elegant", "prominent"],
     "ans": "D",
-    "exp": "【选项释义】A. dominant (adj. 支配的/占优势的)；B. important (adj. 重要的)；C. elegant (adj. 优雅的)；D. prominent (adj. 突出的/卓越的)。【解析】prominent role 常用来指某人在某领域或团队中地位显赫、表现卓越，且后文提到了“领导主要项目”。虽然 important 也对，但 prominent 程度更深，更符合“领导地位”的描述。故选 D。"
+    "exp": "翻译：她在研究团队中扮演着突出的角色，领导着所有主要项目。解析：A. dominant [adj. 占支配地位的]；B. important [adj. 重要的]；C. elegant [adj. 优雅的]；D. prominent [adj. 杰出的/突出的]。【为什么选D】：'prominent role' 形容一个人在某个领域非常卓越、受人瞩目，且起到带头作用。句中的“领导所有项目”证明了她的突出地位。【为什么不选ABC】：dominant 带有强势压迫感；important 太过普通；elegant 形容穿衣举止端庄，不形容项目工作。"
   },
   {
     "id": 17,
     "type": "单选题",
-    "q": "By organizing your time well, you can ______ manage multiple tasks at once. (通过合理安排时间，你可以有效地同时处理多项任务。)",
+    "q": "By organizing your time well, you can ______ manage multiple tasks at once.",
     "options": ["successfully", "productively", "effectively", "accurately"],
     "ans": "C",
-    "exp": "【选项释义】A. successfully (adv. 成功地)；B. productively (adv. 多产地)；C. effectively (adv. 有效地)；D. accurately (adv. 准确地)。【解析】effectively manage 是固定搭配，指通过方法手段实现高效管理。故选 C。"
+    "exp": "翻译：通过合理安排时间，你可以有效地同时处理多项任务。解析：A. successfully [adv. 成功地]；B. productively [adv. 富有成效地]；C. effectively [adv. 有效地]；D. accurately [adv. 准确地]。【为什么选C】：'effectively manage' 是职场常用词，指不仅做完了，而且方法得当、效率很高。【为什么不选ABD】：successfully 只看结果成没成；productively 强调产量很多；accurately 强调数字或细节很精准，不符合管理时间的语境。"
   },
   {
     "id": 18,
     "type": "单选题",
-    "q": "The story was so scary that it had a tight ______ on the audience’s attention. (这个故事如此恐怖，以至于牢牢抓住了观众的注意力。)",
+    "q": "The story was so scary that it had a tight ______ on the audience’s attention.",
     "options": ["gain", "gather", "greet", "grip"],
     "ans": "D",
-    "exp": "【选项释义】A. gain (v. 获得)；B. gather (v. 聚集)；C. greet (v. 问候)；D. grip (v./n. 紧握/吸引住)。【解析】have a grip on... 意为“控制/牢牢吸引住”。这里形容恐怖故事紧紧抓住了观众，用 grip 最生动形象。故选 D。"
+    "exp": "翻译：那个故事太恐怖了，紧紧抓住了观众的注意力。解析：A. gain [v. 获得]；B. gather [v. 聚集]；C. greet [v. 问候]；D. grip [n. 紧握/控制/吸引]。【为什么选D】：'have a grip on someone's attention' 指牢牢抓住某人的注意力，就像手紧紧握住一样。【为什么不选ABC】：gain 是得到（如体重增加）；gather 是把东西堆在一起；greet 是打招呼，都不能形容“恐怖故事抓住注意力”。"
   },
   {
     "id": 19,
     "type": "单选题",
-    "q": "It’s very ________ of you not to talk aloud while the baby is asleep. (你很体谅人，孩子睡觉时不大声说话。)",
+    "q": "It’s very ________ of you not to talk aloud while the baby is asleep.",
     "options": ["concerned", "careful", "considerable", "considerate"],
     "ans": "D",
-    "exp": "【选项释义】A. concerned (adj. 关心的)；B. careful (adj. 小心的)；C. considerable (adj. 相当大的)；D. considerate (adj. 体贴的/考虑周到的)。【解析】形容人设身处地为他人着想、懂礼貌用 considerate。considerable 指数量多或重要，容易混淆。故选 D。"
+    "exp": "翻译：孩子睡觉时你不大声说话，真是太体贴了。解析：A. concerned [adj. 担心的]；B. careful [adj. 小心的]；C. considerable [adj. 相当大的/客观的]；D. considerate [adj. 体谅的/考虑周到的]。【为什么选D】：当你能站在别人角度想问题（如为了不吵醒婴儿而保持安静），这种品质叫 considerate。【为什么不选ABC】：concerned 是焦虑；careful 是怕摔跤或出错；considerable 形容数量很大，都不表示“体贴”。"
   },
   {
     "id": 20,
     "type": "单选题",
-    "q": "When he first started in university, he really felt at _____ with his major- economics. (当他刚开始进入大学学习时，他对他的专业感到不知所措。)",
+    "q": "When he first started in university, he really felt at _____ with his major- economics.",
     "options": ["shore", "bank", "ocean", "sea"],
     "ans": "D",
-    "exp": "【选项释义】A. shore (n. 岸)；B. bank (n. 银行/河岸)；C. ocean (n. 海洋)；D. sea (n. 海)。【解析】at sea 是固定习语，意为“茫然、不知所措”。故选 D。"
-  },
-  {
-    "id": 21,
-    "type": "单选题",
-    "q": "He is _____ about his chances of winning a gold medal in the Olympics next year. (他对自己明年在奥运会上赢得金牌十分乐观。)",
-    "options": ["optimistic", "optional", "outstanding", "obvious"],
-    "ans": "A",
-    "exp": "【选项释义】A. optimistic (adj. 乐观的)；B. optional (adj. 可选择的)；C. outstanding (adj. 杰出的)；D. obvious (adj. 明显的)。【解析】根据“赢得金牌的机会”和常识，这里指“乐观的”。故选 A。"
-  },
-  {
-    "id": 22,
-    "type": "单选题",
-    "q": "She remains confident and ______ untroubled by our present problems. (她仍然充满信心，乐观地不为目前的问题所困扰。)",
-    "options": ["indefinitely", "infinitely", "optimistically", "seemingly"],
-    "ans": "C",
-    "exp": "【选项释义】A. indefinitely (adv. 不确定地)；B. infinitely (adv. 无限地)；C. optimistically (adv. 乐观地)；D. seemingly (adv. 看似地)。【解析】与 confident (自信的) 并列，修饰 untroubled (不困扰)，用 optimistically (乐观地) 最符合语义逻辑。故选 C。"
-  },
-  {
-    "id": 23,
-    "type": "单选题",
-    "q": "The teacher asked us to ______ the important points in the textbook with a yellow pen. (老师让我们用黄色荧光笔将课本上的要点着重标记出来。)",
-    "options": ["ignore", "highlight", "forget", "hide"],
-    "ans": "B",
-    "exp": "【选项释义】A. ignore (v. 忽略)；B. highlight (v. 突出/强调)；C. forget (v. 忘记)；D. hide (v. 隐藏)。【解析】用“黄色笔”处理“要点”，通常是“高亮/着重标记”，对应 highlight。故选 B。"
-  },
-  {
-    "id": 24,
-    "type": "单选题",
-    "q": "Operations which left patients ______ now leave them feeling relaxed and comfortable. (以前让病人精疲力竭的手术，现在让病人感到轻松而舒适。)",
-    "options": ["injured", "exhausted", "deserted", "abandoned"],
-    "ans": "B",
-    "exp": "【选项释义】A. injured (adj. 受伤的)；B. exhausted (adj. 精疲力竭的)；C. deserted (adj. 荒废的/被遗弃的)；D. abandoned (adj. 被抛弃的)。【解析】与 relaxed and comfortable (轻松舒适) 相反的词是 exhausted (精疲力竭)。故选 B。"
-  },
-  {
-    "id": 25,
-    "type": "单选题",
-    "q": "The scientists have made an ______ study of the viruses that cause the disease. (科学家对导致这种疾病的病毒进行了详尽的研究。)",
-    "options": ["exhausted", "exhausting", "exhaustive", "exhaustion"],
-    "ans": "C",
-    "exp": "【选项释义】A. exhausted (adj. 人感到疲累的)；B. exhausting (adj. 令人疲累的事)；C. exhaustive (adj. 详尽的/彻底的)；D. exhaustion (n. 疲惫)。【解析】exhaustive study 是固定搭配，意为“详尽、彻底的研究”。注意三个形容词的区别。故选 C。"
-  },
-  {
-    "id": 26,
-    "type": "单选题",
-    "q": "They are trying to ______ the waste discharged by the factory for profit. (他们正试图利用工厂废物赚钱。)",
-    "options": ["expose", "exhaust", "exhibit", "exploit"],
-    "ans": "D",
-    "exp": "【选项释义】A. expose (v. 暴露)；B. exhaust (v. 耗尽)；C. exhibit (v. 展览)；D. exploit (v. 利用/剥削)。【解析】exploit the waste 表示“开发/利用废物”。故选 D。"
-  },
-  {
-    "id": 27,
-    "type": "单选题",
-    "q": "Before we move, we should ______ some of the old furniture. (搬家前我们应该先扔掉一些旧家具。)",
-    "options": ["discard", "dissipate", "cancel", "conceal"],
-    "ans": "A",
-    "exp": "【选项释义】A. discard (v. 扔掉/抛弃)；B. dissipate (v. 驱散/挥霍)；C. cancel (v. 取消)；D. conceal (v. 隐藏)。【解析】处理不用的旧家具用 discard。故选 A。"
-  },
-  {
-    "id": 28,
-    "type": "单选题",
-    "q": "Many a player who had been highly thought of has ____ from the tennis scene. (很多曾被高度评价的选手已经从网球场上消失了。)",
-    "options": ["disposed", "disappeared", "discouraged", "discarded"],
-    "ans": "B",
-    "exp": "【选项释义】A. disposed (v. 处理)；B. disappeared (v. 消失)；C. discouraged (v. 使泄气)；D. discarded (v. 丢弃)。【解析】从舞台或视野中“消失”用 disappear。故选 B。"
-  },
-  {
-    "id": 29,
-    "type": "单选题",
-    "q": "I'd _____ his reputation... and then make a decision about whether or not to approve a loan. (我得考虑他的信誉，然后再决定是否贷款。)",
-    "options": ["take into account", "account for", "make up for", "make out"],
-    "ans": "A",
-    "exp": "【选项释义】A. take into account (考虑到)；B. account for (解释/占比例)；C. make up for (弥补)；D. make out (辨认出)。【解析】在决策前“考虑”因素，用 take...into account。故选 A。"
-  },
-  {
-    "id": 30,
-    "type": "单选题",
-    "q": "She cooked the meat for a long time so as to make it ____ enough to eat. (为了使肉够嫩，她煮了很长时间。)",
-    "options": ["mild", "slight", "light", "tender"],
-    "ans": "D",
-    "exp": "【选项释义】A. mild (adj. 温和的)；B. slight (adj. 轻微的)；C. light (adj. 轻的/浅色的)；D. tender (adj. 食物嫩的)。【解析】形容肉质鲜嫩、易嚼用 tender。故选 D。"
-  },
-  {
-    "id": 31,
-    "type": "单选题",
-    "q": "Can you give me even the _____ clue as to where her son might be? (你能给我一丁点的暗示吗？)",
-    "options": ["simplest", "slightest", "least", "utmost"],
-    "ans": "B",
-    "exp": "【选项释义】A. simplest (最简单的)；B. slightest (最少的/极小的)；C. least (最小的/最少的)；D. utmost (极度的)。【解析】not the slightest clue/even the slightest clue 是固定用法，指“哪怕一点点/最微小的线索”。故选 B。"
-  },
-  {
-    "id": 32,
-    "type": "单选题",
-    "q": "After the storm, the community worked together to ______ power and water supplies. (风暴过后，社区共同努力恢复了电力和供水。)",
-    "options": ["recover", "renew", "restore", "rebuild"],
-    "ans": "C",
-    "exp": "【选项释义】A. recover (恢复健康/找回失物)；B. renew (更新/续约)；C. restore (恢复原状/修复)；D. rebuild (重建)。【解析】恢复基础设施（水电供应）通常用 restore。故选 C。"
-  },
-  {
-    "id": 33,
-    "type": "单选题",
-    "q": "I really ______ your ability to speak three languages fluently. (我真的很羡慕你能流利说三种语言的能力。)",
-    "options": ["envy", "admire", "adore", "desire"],
-    "ans": "A",
-    "exp": "【选项释义】A. envy (v. 羡慕/嫉妒)；B. admire (v. 钦佩)；C. adore (v. 喜爱)；D. desire (v. 渴望)。【解析】envy 指看到别人有自己没有的东西而产生羡慕，这里指语言能力。admire 侧重于对他人的行为或品德表示赞赏。源文件给定答案为 A。"
-  },
-  {
-    "id": 34,
-    "type": "单选题",
-    "q": "The manager had to give a ______ to the employee for repeatedly being late. (经理不得不因为员工屡次迟到而训斥他。)",
-    "options": ["scold", "criticize", "lecture", "blame"],
-    "ans": "C",
-    "exp": "【选项释义】A. scold (v. 责骂)；B. criticize (v. 批评)；C. lecture (n./v. 训斥/讲座)；D. blame (v. 责怪)。【解析】give a lecture to sb. 在这里意为“给某人一顿训诫”。故选 C。"
-  },
-  {
-    "id": 35,
-    "type": "单选题",
-    "q": "He didn't break the vase by accident; he did it ______ to get attention. (他不是意外打碎的，他是故意这么做的。)",
-    "options": ["willingly", "fortunately", "initially", "intentionally"],
-    "ans": "D",
-    "exp": "【选项释义】A. willingly (乐意地)；B. fortunately (幸运地)；C. initially (最初)；D. intentionally (故意地)。【解析】与 by accident (意外) 相反的词是 intentionally (故意地)。故选 D。"
-  },
-  {
-    "id": 36,
-    "type": "单选题",
-    "q": "A ______ is very useful for cleaning up spilled water on the table. (海绵对于清理桌子上洒出来的水非常有用。)",
-    "options": ["sponge", "spoon", "broom", "brush"],
-    "ans": "A",
-    "exp": "【选项释义】A. sponge (n. 海绵)；B. spoon (n. 勺子)；C. broom (n. 扫帚)；D. brush (n. 刷子)。【解析】清理桌面的积水，海绵因吸水性好而最合适。故选 A。"
-  },
-  {
-    "id": 37,
-    "type": "单选题",
-    "q": "Although they plant trees... the tops of some hills are still___. (尽管种了树，一些山顶还是光秃秃的。)",
-    "options": ["blank", "hollow", "vacant", "bare"],
-    "ans": "D",
-    "exp": "【选项释义】A. blank (空白的)；B. hollow (中空的)；C. vacant (空缺的)；D. bare (裸露的/光秃秃的)。【解析】形容地面、山头没有植被覆盖用 bare。故选 D。"
-  },
-  {
-    "id": 38,
-    "type": "单选题",
-    "q": "During the summer holiday season there are no__rooms in this seaside hotel. (暑假期间这个海边旅馆没有空房。)",
-    "options": ["empty", "blank", "deserted", "vacant"],
-    "ans": "D",
-    "exp": "【选项释义】A. empty (空洞的/没东西的)；B. blank (空白的/没写字的)；C. deserted (废弃的)；D. vacant (空着的/未被占用的)。【解析】指旅馆或公共设施“有空位/有空房”用 vacant。故选 D。"
-  },
-  {
-    "id": 39,
-    "type": "单选题",
-    "q": "Could you take a ___sheet of paper and write your name? (你能拿一张白纸并写上名字吗？)",
-    "options": ["bare", "vacant", "hollow", "blank"],
-    "ans": "D",
-    "exp": "【选项释义】A. bare (赤裸的)；B. vacant (空的)；C. hollow (空的)；D. blank (空白的)。【解析】形容纸张没有写过字，是“空白的”，用 blank。故选 D。"
-  },
-  {
-    "id": 40,
-    "type": "单选题",
-    "q": "When people become unemployed, it is____which is often worse than lack of wages. (失业时，无所事事比没工资更糟糕。)",
-    "options": ["laziness", "poverty", "idleness", "inability"],
-    "ans": "C",
-    "exp": "【选项释义】A. laziness (懒惰)；B. poverty (贫困)；C. idleness (无事可做/闲散)；D. inability (无能)。【解析】unemployed (失业) 导致的状态是 idleness (没活干/空闲)。故选 C。"
-  },
-  {
-    "id": 41,
-    "type": "单选题",
-    "q": "William Penn... ＿＿defended the right of every citizen to freedom of choice. (威廉·彭有力地捍卫了每个公民的选择权。)",
-    "options": ["peacefully", "indifferently", "vigorously", "inevitably"],
-    "ans": "C",
-    "exp": "【选项释义】A. peacefully (和平地)；B. indifferently (冷淡地)；C. vigorously (精力充沛地/有力地)；D. inevitably (不可避免地)。【解析】defend vigorously 是固定搭配，表示“有力地捍卫”。故选 C。"
-  },
-  {
-    "id": 42,
-    "type": "单选题",
-    "q": "Some people... expect to pick up wonderful___in the market. (有些人期待在市场买到物美价廉的东西。)",
-    "options": ["batteries", "bargains", "baskets", "barrels"],
-    "ans": "B",
-    "exp": "【选项释义】A. batteries (电池)；B. bargains (廉价货/特价商品)；C. baskets (篮子)；D. barrels (桶)。【解析】pick up bargains 指“买到便宜货”。故选 B。"
-  },
-  {
-    "id": 43,
-    "type": "单选题",
-    "q": "We’d like to___a table for five for dinner this evening. (我们想预订一张今晚五人用餐的桌子。)",
-    "options": ["preserve", "retain", "reserve", "sustain"],
-    "ans": "C",
-    "exp": "【选项释义】A. preserve (保存/保护)；B. retain (保留/持有)；C. reserve (预订)；D. sustain (维持)。【解析】在餐厅或旅馆预订位置用 reserve。故选 C。"
-  },
-  {
-    "id": 44,
-    "type": "单选题",
-    "q": "In previous times, when fresh meat was in short ___... (以前当鲜肉供应短缺时……)",
-    "options": ["store", "provision", "reserve", "supply"],
-    "ans": "D",
-    "exp": "【选项释义】A. store (仓库)；B. provision (预备)；C. reserve (储备)；D. supply (供应)。【解析】in short supply 是固定短语，表示“供应短缺”。故选 D。"
-  },
-  {
-    "id": 45,
-    "type": "单选题",
-    "q": "The local authorities realized the need to make＿＿for elderly people. (地方当局意识到有必要为老人做好准备和安排。)",
-    "options": ["preparation", "requirement", "specification", "provision"],
-    "ans": "D",
-    "exp": "【选项释义】A. preparation (准备)；B. requirement (要求)；C. specification (规格)；D. provision (准备/预备/供应)。【解析】make provision for sb. 意为“为某人做准备/提供生活所需”。preparation 侧重具体事项的准备（如考前准备）。故选 D。"
-  },
-  {
-    "id": 46,
-    "type": "单选题",
-    "q": "After the guests left, she spent half an hour＿＿the sitting-room. (客人走后，她花了半小时整理客厅。)",
-    "options": ["ordering", "arranging", "tidying up", "putting away"],
-    "ans": "C",
-    "exp": "【选项释义】A. ordering (命令/订购)；B. arranging (安排)；C. tidying up (收拾/整理)；D. putting away (收起来)。【解析】tidy up 是清理、整理房间的最常用表达。故选 C。"
-  },
-  {
-    "id": 47,
-    "type": "单选题",
-    "q": "Those gifts of rare books... were deeply___. (那些赠送的珍贵图书深受重视。)",
-    "options": ["appreciated", "approved", "appealed", "applied"],
-    "ans": "A",
-    "exp": "【选项释义】A. appreciated (欣赏/重视/感激)；B. approved (赞成)；C. appealed (呼吁/吸引)；D. applied (应用)。【解析】物品（尤其是书、艺术品）被重视或赏识，用 appreciate。故选 A。"
-  },
-  {
-    "id": 48,
-    "type": "单选题",
-    "q": "People appreciate ____with him because he has a good sense of humor. (人们喜欢和他一起工作。)",
-    "options": ["to work", "to have worked", "working", "having worked"],
-    "ans": "C",
-    "exp": "【选项释义】动词形式辨析。【解析】appreciate doing sth. 是固定用法，后面必须接动名。这里指一般的“一起工作”，不用完成时。故选 C。"
-  },
-  {
-    "id": 49,
-    "type": "单选题",
-    "q": "The discovery of penicillin was a major ______ in medical science. (青霉素的发现是医学的一项重大突破。)",
-    "options": ["advancement", "breakthrough", "innovation", "milestone"],
-    "ans": "B",
-    "exp": "【选项释义】A. advancement (进步)；B. breakthrough (突破)；C. innovation (创新)；D. milestone (里程碑)。【解析】青霉素的发现是划时代的、打破僵局的“突破”。breakthrough 最贴切。故选 B。"
-  },
-  {
-    "id": 50,
-    "type": "单选题",
-    "q": "The road was ______ after the ice storm. (冰暴过后路面很滑。)",
-    "options": ["icy", "slippery", "slick", "smooth"],
-    "ans": "B",
-    "exp": "【选项释义】A. icy (冰冷的)；B. slippery (滑的)；C. slick (圆滑的/熟练的)；D. smooth (平滑的)。【解析】形容路面因水或冰而让人站不稳，用 slippery。故选 B。"
-  },
-  {
-    "id": 51,
-    "type": "单选题",
-    "q": "All the ______ from the charity concert will go to support local hospitals. (慈善音乐会的所有收益将用于支持医院。)",
-    "options": ["proceeds", "profits", "earnings", "revenue"],
-    "ans": "A",
-    "exp": "【选项释义】A. proceeds (收益/实收款项)；B. profits (利润)；C. earnings (工资/收入)；D. revenue (税收/财政收入)。【解析】慈善活动或卖票得到的“款项”统称为 proceeds。profit 是指扣除成本后的利润。故选 A。"
-  },
-  {
-    "id": 52,
-    "type": "单选题",
-    "q": "The new software can ______ large amounts of data... (新软件能更快处理大量数据。)",
-    "options": ["analyze", "manage", "process", "handle"],
-    "ans": "C",
-    "exp": "【选项释义】A. analyze (分析)；B. manage (管理)；C. process (处理/加工)；D. handle (处理/应对)。【解析】在计算机语境下，对数据的“处理”专门用 process。故选 C。"
-  },
-  {
-    "id": 53,
-    "type": "单选题",
-    "q": "The company plans to ______ its business into the Asian market. (公司计划将业务扩展到亚洲。)",
-    "options": ["develop", "extend", "enlarge", "expand"],
-    "ans": "D",
-    "exp": "【选项释义】A. develop (发展)；B. extend (延长/延伸)；C. enlarge (放大)；D. expand (扩张/扩展)。【解析】业务、规模、领土的扩张用 expand。故选 D。"
-  },
-  {
-    "id": 54,
-    "type": "单选题",
-    "q": "A ___________ partnership must be a two-way street. (真正的伙伴关系必须是双向的。)",
-    "options": ["genius", "genuine", "generous", "general"],
-    "ans": "B",
-    "exp": "【选项释义】A. genius (天才)；B. genuine (真实的/真正的)；C. generous (大方的)；D. general (普遍的)。【解析】genuine partnership 指“真诚的、名副其实的伙伴关系”。故选 B。"
-  },
-  {
-    "id": 55,
-    "type": "单选题",
-    "q": "The computer revolution may change society as _____ as did the Industrial Revolution. (计算机革命将对社会产生根本性的影响。)",
-    "options": ["certainly", "mostly", "fundamentally", "comparatively"],
-    "ans": "C",
-    "exp": "【选项释义】A. certainly (当然地)；B. mostly (主要地)；C. fundamentally (根本地)；D. comparatively (比较地)。【解析】fundamental change 是固定概念，指基础性的、彻底的改变。故选 C。"
-  },
-  {
-    "id": 56,
-    "type": "单选题",
-    "q": "A lot of ants are always invading my kitchen. They are a thorough _____. (很多蚂蚁入侵厨房，真是令人讨厌。)",
-    "options": ["nuisance", "trouble", "worry", "anxiety"],
-    "ans": "A",
-    "exp": "【选项释义】A. nuisance (讨厌的人或物/麻烦事)；B. trouble (麻烦)；C. worry (担心)；D. anxiety (焦虑)。【解析】nuisance 指那些并不严重但让人烦心、讨厌的事物，常用于描述害虫或噪音。故选 A。"
-  },
-  {
-    "id": 57,
-    "type": "单选题",
-    "q": "The teacher _____ expects his students to pass... (老师自信地期待学生通过考试。)",
-    "options": ["confidentially", "proudly", "assuredly", "confidently"],
-    "ans": "D",
-    "exp": "【选项释义】A. confidentially (秘密地)；B. proudly (自豪地)；C. assuredly (无疑地)；D. confidently (自信地)。【解析】与 expect 连用表示对某事有信心，用 confidently。注意 A 项是“秘密地”。故选 D。"
-  },
-  {
-    "id": 58,
-    "type": "单选题",
-    "q": "Uruguay understands and ________China on human rights issues. (乌拉圭在人权问题上理解并支持中国。)",
-    "options": ["grants", "changes", "abandons", "backs"],
-    "ans": "D",
-    "exp": "【选项释义】A. grants (授予)；B. changes (改变)；C. abandons (抛弃)；D. backs (支持)。【解析】back 做动词时表示“支持/做后盾”。故选 D。"
-  },
-  {
-    "id": 59,
-    "type": "单选题",
-    "q": "The media are very good at sensing a mood and then ____ it. (媒体善于察觉气氛并夸大它。)",
-    "options": ["overtaking", "enlarging", "widening", "exaggerating"],
-    "ans": "D",
-    "exp": "【选项释义】A. overtaking (超过)；B. enlarging (放大照片/扩大)；C. widening (拓宽)；D. exaggerating (夸大)。【解析】媒体报道常将小事说大，即“夸大”，对应 exaggerating。故选 D。"
-  },
-  {
-    "id": 60,
-    "type": "单选题",
-    "q": "The statistical figures in that report are not ______. (那份报告里的统计数据不准确。)",
-    "options": ["accurate", "fixed", "delicate", "rigid"],
-    "ans": "A",
-    "exp": "【选项释义】A. accurate (精确的)；B. fixed (固定的)；C. delicate (脆弱的)；D. rigid (死板的)。【解析】形容数字、数据“准确”，专门用 accurate。故选 A。"
-  },
-  {
-    "id": 61,
-    "type": "单选题",
-    "q": "By law... he should have ______ opportunity to change his mind. (依法，他应有足够的机会考虑。)",
-    "options": ["accurate", "urgent", "excessive", "adequate"],
-    "ans": "D",
-    "exp": "【选项释义】A. accurate (准确的)；B. urgent (紧急的)；C. excessive (过度的)；D. adequate (充足的/足够的)。【解析】足够的机会或资源用 adequate。故选 D。"
-  },
-  {
-    "id": 62,
-    "type": "单选题",
-    "q": "Since the matter was extremely _____ we dealt with it immediately. (由于事情非常紧急，我们立即处理了。)",
-    "options": ["tough", "tense", "urgent", "instant"],
-    "ans": "C",
-    "exp": "【选项释义】A. tough (棘手的)；B. tense (紧张的)；C. urgent (紧急的)；D. instant (立即的)。【解析】从 immediately (立即) 可以推断事情是 urgent (紧急的)。故选 C。"
-  },
-  {
-    "id": 63,
-    "type": "单选题",
-    "q": "The math teacher seems _____ towards bright students. (数学老师似乎偏袒聪明的学生。)",
-    "options": ["partial", "beneficial", "preferable", "liable"],
-    "ans": "A",
-    "exp": "【选项释义】A. partial (偏袒的/不公平的)；B. beneficial (有益的)；C. preferable (更好的)；D. liable (有倾向的/有责任的)。【解析】be partial to/towards sb. 是固定短语，表示“偏心/偏袒”。故选 A。"
-  },
-  {
-    "id": 64,
-    "type": "单选题",
-    "q": "______ quantities of water are being used nowadays... (如今水的消耗量很大。)",
-    "options": ["Excessive", "Extensive", "Extreme", "Exclusive"],
-    "ans": "B",
-    "exp": "【选项释义】A. Excessive (过度的)；B. Extensive (广泛的/大量的)；C. Extreme (极端的)；D. Exclusive (独有的)。【解析】extensive quantities of 指“大量的”。excessive 带有否定色彩（多到不该有的地步）。故选 B。"
-  },
-  {
-    "id": 65,
-    "type": "单选题",
-    "q": "Not only the professionals but also the amateurs will _____ from the new training facilities. (专业和业余选手都将受益。)",
-    "options": ["derive", "acquire", "benefit", "reward"],
-    "ans": "C",
-    "exp": "【选项释义】A. derive (源于)；B. acquire (获得)；C. benefit (受益)；D. reward (报答)。【解析】benefit from 是固定短语，意为“从……中获益”。故选 C。"
-  },
-  {
-    "id": 66,
-    "type": "单选题",
-    "q": "A dark suit is ______ to a light one for evening wear. (晚装中，深色衣服比浅色的更合适。)",
-    "options": ["favourable", "suitable", "preferable", "proper"],
-    "ans": "C",
-    "exp": "【选项释义】A. favourable (有利的)；B. suitable (合适的)；C. preferable (更可取的/更优选的)；D. proper (恰当的)。【解析】be preferable to 意为“比……更合意/更好”，用于两者之间的对比优选。故选 C。"
-  },
-  {
-    "id": 67,
-    "type": "单选题",
-    "q": "When supply exceeds demand for any product, prices are _____ to fall. (当供过于求时，价格很可能会下跌。)",
-    "options": ["timely", "simultaneous", "subject", "liable"],
-    "ans": "D",
-    "exp": "【选项释义】A. timely (及时的)；B. simultaneous (同时的)；C. subject (易受……影响的)；D. liable (很可能的/易于……的)。【解析】be liable to do sth. 意为“很有可能做某事（常指不好的趋势）”。故选 D。"
-  },
-  {
-    "id": 68,
-    "type": "单选题",
-    "q": "In the ancient society, owning land was a primary symbol of social ______. (古代社会，拥有土地是社会地位的象征。)",
-    "options": ["rank", "position", "status", "prestige"],
-    "ans": "C",
-    "exp": "【选项释义】A. rank (军衔/等级)；B. position (位置/职位)；C. status (社会地位)；D. prestige (名望)。【解析】social status 是固定搭配，指社会地位。故选 C。"
-  },
-  {
-    "id": 69,
-    "type": "单选题",
-    "q": "To ______ your ambition requires... relentless effort. (实现你的抱负需要不懈的努力。)",
-    "options": ["finish", "reach", "fulfill", "implement"],
-    "ans": "C",
-    "exp": "【选项释义】A. finish (完成)；B. reach (到达)；C. fulfill (实现/履行)；D. implement (实施)。【解析】fulfill one's ambition 是固定搭配，指实现抱负。故选 C。"
-  },
-  {
-    "id": 70,
-    "type": "单选题",
-    "q": "If you ______ enough small savings over time... (随着时间推移，如果你积累了足够的储蓄……)",
-    "options": ["collect", "gather", "accumulate", "assemble"],
-    "ans": "C",
-    "exp": "【选项释义】A. collect (收集)；B. gather (聚集)；C. accumulate (积累)；D. assemble (集合/组装)。【解析】accumulate 强调钱、物或知识随时间慢慢地、一点一滴地“积累”。故选 C。"
-  },
-  {
-    "id": 71,
-    "type": "单选题",
-    "q": "We must ______ our work to the needs of the people. (我们必须使工作面向人民的需要。)",
-    "options": ["adapt", "acquaint", "introduce", "orient"],
-    "ans": "D",
-    "exp": "【选项释义】A. adapt (适应/改编)；B. acquaint (使熟悉)；C. introduce (介绍)；D. orient (使朝向/定位)。【解析】orient... to... 指“使以……为导向/使面对”。adapt 虽有适应之意，但与 to 连用通常指主动适应环境，而 orient 强调方向性。故选 D。"
-  },
-  {
-    "id": 72,
-    "type": "单选题",
-    "q": "We have collected ______ evidence to prove... (我们收集了足够的证据。)",
-    "options": ["proper", "sufficient", "simple", "reluctant"],
-    "ans": "B",
-    "exp": "【选项释义】A. proper (适当的)；B. sufficient (足够的/充足的)；C. simple (简单的)；D. reluctant (不情愿的)。【解析】sufficient evidence 意为“充足的证据”，是法学和逻辑学中的常用搭配。故选 B。"
-  },
-  {
-    "id": 73,
-    "type": "单选题",
-    "q": "The British constitution is ____a large extent a product of historical events. (在很大程度上，英国宪法是历史事件的产物。)",
-    "options": ["within", "to", "by", "at"],
-    "ans": "B",
-    "exp": "【选项释义】介词辨析。【解析】to a large extent 是固定表达，意为“在很大程度上”。故选 B。"
-  },
-  {
-    "id": 74,
-    "type": "单选题",
-    "q": "The newspaper did not mention the____of the damage. (报纸没提损坏的程度。)",
-    "options": ["range", "level", "extent", "quantity"],
-    "ans": "C",
-    "exp": "【选项释义】A. range (范围)；B. level (水平)；C. extent (程度)；D. quantity (数量)。【解析】mention the extent of damage 指提到受损的程度。故选 C。"
-  },
-  {
-    "id": 75,
-    "type": "单选题",
-    "q": "Everybody__ in the hall where they were welcomed. (人们聚集在大厅。)",
-    "options": ["assembled", "accumulated", "piled", "joined"],
-    "ans": "A",
-    "exp": "【选项释义】A. assembled (聚集/集合)；B. accumulated (积累)；C. piled (堆积)；D. joined (加入)。【解析】assemble 指人们为了某个目的而聚集在某个地方。故选 A。"
-  },
-  {
-    "id": 76,
-    "type": "单选题",
-    "q": "Their products are frequently overpriced and _____ in quality. (产品质次价高。)",
-    "options": ["influential", "inferior", "superior", "impossible"],
-    "ans": "B",
-    "exp": "【选项释义】A. influential (有影响的)；B. inferior (差的/低等的)；C. superior (好的)；D. impossible (不可能的)。【解析】inferior in quality 指质量差，与 overpriced 对应。故选 B。"
-  },
-  {
-    "id": 77,
-    "type": "单选题",
-    "q": "_____energy under the earth must be released... (地下累积的能量必须释放。)",
-    "options": ["Accumulated", "Gathered", "Assembled", "Collected"],
-    "ans": "A",
-    "exp": "【选项释义】A. Accumulated (累积的)；B. Gathered (聚集的)；C. Assembled (集合的)；D. Collected (收集的)。【解析】形容能量、压力慢慢积聚的过程用 accumulate。故选 A。"
-  },
-  {
-    "id": 78,
-    "type": "单选题",
-    "q": "The price of beer______ from 50 cents to $4 per liter. (啤酒价格在50美分到4美元之间不等。)",
-    "options": ["ranged", "composed", "differed", "attached"],
-    "ans": "A",
-    "exp": "【选项释义】A. ranged (在一定范围内变动)；B. composed (组成)；C. differed (不同)；D. attached (附着)。【解析】range from A to B 意为“范围从A到B不等”。故选 A。"
-  },
-  {
-    "id": 79,
-    "type": "单选题",
-    "q": "There has been a collision___a number of cars... (主路上发生了涉及多辆车的碰撞。)",
-    "options": ["composing", "consisting", "involving", "engaging"],
-    "ans": "C",
-    "exp": "【选项释义】A. composing (组成的)；B. consisting (组成的)；C. involving (涉及/卷入)；D. engaging (从事)。【解析】involving a number of cars 意为“涉及到/卷入了好几辆车”。故选 C。"
-  },
-  {
-    "id": 80,
-    "type": "单选题",
-    "q": "Cyber criminals ___the Internet's security. (网络犯罪破坏互联网安全。)",
-    "options": ["innovate", "undermine", "contain", "comprise"],
-    "ans": "B",
-    "exp": "【选项释义】A. innovate (创新)；B. undermine (削弱/暗中破坏)；C. contain (包含)；D. comprise (包含/构成)。【解析】undermine security 指“破坏/损害安全”。故选 B。"
-  },
-  {
-    "id": 81,
-    "type": "单选题",
-    "q": "I'm very sorry to have____ you with so many questions. (很抱歉在这个场合问这么多问题打扰你。)",
-    "options": ["interfered", "offended", "impressed", "bothered"],
-    "ans": "D",
-    "exp": "【选项释义】A. interfered (干涉)；B. offended (冒犯)；C. impressed (使有印象)；D. bothered (打扰)。【解析】bother sb. with sth. 意为“用某事打扰某人”。interfere 通常接 with 表示干涉某事。故选 D。"
-  },
-  {
-    "id": 82,
-    "type": "单选题",
-    "q": "He ____________ her on her last physics paper. (他称赞了她的物理论文。)",
-    "options": ["emphasized", "observed", "complimented", "spoke"],
-    "ans": "C",
-    "exp": "【选项释义】A. emphasized (强调)；B. observed (观察/遵守)；C. complimented (称赞/赞扬)；D. spoke (说)。【解析】compliment sb. on sth. 是固定短语，表示“就某事赞扬某人”。故选 C。"
-  },
-  {
-    "id": 83,
-    "type": "单选题",
-    "q": "Two million workers are employed ________ goods for electronic firms. (两百万工人被雇佣来加工电子公司的产品。)",
-    "options": ["managing", "processing", "conducting", "discarding"],
-    "ans": "B",
-    "exp": "【选项释义】A. managing (管理)；B. processing (加工/处理)；C. conducting (进行)；D. discarding (丢弃)。【解析】processing goods 意为“加工货物/产品”。故选 B。"
-  },
-  {
-    "id": 84,
-    "type": "单选题",
-    "q": "Let me assure you that it was not done ___________. (我向你保证，这不是故意的。)",
-    "options": ["intentionally", "greatly", "importantly", "instantly"],
-    "ans": "A",
-    "exp": "【选项释义】A. intentionally (故意地)；B. greatly (大地/非常)；C. importantly (重要地)；D. instantly (立即)。【解析】句意为“不是故意的”。A 项对应 intentionally。故选 A。"
-  },
-  {
-    "id": 85,
-    "type": "单选题",
-    "q": "Before he could find the ________ word she had cut him short. (还没等他找到合适的词，她就打断了他。)",
-    "options": ["fabulous", "wonderful", "fantastic", "fitting"],
-    "ans": "D",
-    "exp": "【选项释义】A. fabulous (极好的)；B. wonderful (精彩的)；C. fantastic (极好的)；D. fitting (合适的)。【解析】fitting word 意为“合适的、得体的词”。故选 D。"
-  },
-  {
-    "id": 86,
-    "type": "单选题",
-    "q": "As a film ______, she is known for her harsh but fair reviews. (作为影评人，她以严厉但公正的评论著称。)",
-    "options": ["critic", "judge", "spokesman", "reporter"],
-    "ans": "A",
-    "exp": "【选项释义】A. critic (评论家/批评家)；B. judge (法官/评委)；C. spokesman (发言人)；D. reporter (记者)。【解析】film critic 是“影评人”的固定称呼。故选 A。"
-  },
-  {
-    "id": 87,
-    "type": "单选题",
-    "q": "There is a ______ contrast between the ancient temple and the modern skyscrapers. (古庙和现代摩天大楼形成了鲜明的对比。)",
-    "options": ["dramatic", "unbelievable", "sticking", "striking"],
-    "ans": "D",
-    "exp": "【选项释义】A. dramatic (剧烈的/戏剧性的)；B. unbelievable (不可信的)；C. sticking (粘的)；D. striking (显著的/突出的)。【解析】striking contrast 是固定搭配，表示“显著的、鲜明的对比”。故选 D。"
-  },
-  {
-    "id": 88,
-    "type": "单选题",
-    "q": "The ______ of food and medicine to the disaster area was completed smoothly. (向灾区分发食物和药品的任务顺利完成。)",
-    "options": ["circulation", "delivery", "distribution", "transformation"],
-    "ans": "C",
-    "exp": "【选项释义】A. circulation (循环/流通)；B. delivery (投递/交付)；C. distribution (分发/分配)；D. transformation (转变)。【解析】向许多人或地区分发物资，用 distribution 最合适。故选 C。"
-  },
-  {
-    "id": 89,
-    "type": "单选题",
-    "q": "It is crucial to ______ the responsibilities of each team member. (明确界定每个成员的职责至关重要。)",
-    "options": ["outline", "define", "clarify", "arrange"],
-    "ans": "B",
-    "exp": "【选项释义】A. outline (概括/划轮廓)；B. define (界定/定义)；C. clarify (澄清)；D. arrange (安排)。【解析】define responsibilities 意为“界定/明确职责”。故选 B。"
-  },
-  {
-    "id": 90,
-    "type": "单选题",
-    "q": "The old couple showed great ______ for their grandchildren. (这对老夫妇对孙辈表现出极大的关爱。)",
-    "options": ["tenderness", "fondness", "affection", "emotion"],
-    "ans": "C",
-    "exp": "【选项释义】A. tenderness (温柔/柔软)；B. fondness (喜爱)；C. affection (喜爱/钟爱/慈爱)；D. emotion (情感)。【解析】affection 指一种深厚且持久的爱，常用于长辈对晚辈或亲友间。故选 C。"
+    "exp": "翻译：当他刚进大学时，他对自己的专业——经济学感到不知所措。解析：A. shore [n. 岸]；B. bank [n. 银行/河岸]；C. ocean [n. 海洋]；D. sea [n. 大海]。【为什么选D】：'at sea' 是个成语，字面意思是“在海上”，引申为“迷失方向、茫然、不知所措”。【为什么不选ABC】：虽然它们都和水有关，但英语里没有 at shore 或 at bank 这种表示“迷茫”的用法。"
   }
-];
+]
