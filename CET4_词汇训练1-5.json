@@ -1,0 +1,1141 @@
+[
+  {
+    "id": 1,
+    "type": "单选题",
+    "q": "Many English words are _______ from Latin.",
+    "options": [
+      "displayed",
+      "spread",
+      "lost",
+      "derived"
+    ],
+    "ans": "D",
+    "exp": "翻译：许多英语单词都来自拉丁语。选项：A. displayed；B. spread；C. lost；D. derived（衍生出，源于）。答案：D。"
+  },
+  {
+    "id": 2,
+    "type": "单选题",
+    "q": "He’ll always be _______ to you for what you’ve done.",
+    "options": [
+      "peaceful",
+      "secure",
+      "grateful",
+      "difficult"
+    ],
+    "ans": "C",
+    "exp": "翻译：他将永远感激你所做的一切。选项：A. peaceful；B. secure；C. grateful；D. difficult。答案：C。"
+  },
+  {
+    "id": 3,
+    "type": "单选题",
+    "q": "The international situation is very _______ in the Middle East.",
+    "options": [
+      "delicious",
+      "perfect",
+      "delicate",
+      "percent"
+    ],
+    "ans": "C",
+    "exp": "翻译：中东的国际局势非常微妙。选项：A. delicious；B. perfect；C. delicate（脆弱的，易碎的；微妙的，棘手的）；D. percent。答案：C。"
+  },
+  {
+    "id": 4,
+    "type": "单选题",
+    "q": "Many years ago, a lot of factories were _______ from big cities to the mountainous areas in case of war.",
+    "options": [
+      "transferred",
+      "transformed",
+      "transmitted",
+      "transported"
+    ],
+    "ans": "A",
+    "exp": "翻译：许多年前,为了防止战争带来的危害,许多工厂从大城市转移到山区。选项：A. transferred；B. transformed（转变）；C. transmitted（传输，传播）；D. transported（运输）。答案：A。"
+  },
+  {
+    "id": 5,
+    "type": "单选题",
+    "q": "The news has not yet been officially _______ by the government.",
+    "options": [
+      "struck",
+      "confirmed",
+      "founded",
+      "pointed"
+    ],
+    "ans": "B",
+    "exp": "翻译：消息还没有被官方证实。选项：A. struck（打，撞strike）；B. confirmed；C. founded；D. pointed。答案：B。"
+  },
+  {
+    "id": 6,
+    "type": "单选题",
+    "q": "Many kinds of animals are believed to have _________ from the earth.",
+    "options": [
+      "withdrawn",
+      "vanished",
+      "found",
+      "hung hang"
+    ],
+    "ans": "B",
+    "exp": "翻译：人们相信很多种动物已经从地球上消失了。选项：A. withdrawn（撤离；撤销）；B. vanished（人间蒸发，销声匿迹）；C. found；D. hung hang（-hung-hung）。答案：B。"
+  },
+  {
+    "id": 7,
+    "type": "单选题",
+    "q": "It is impossible for us to _______ such a difficult task within the limited time.",
+    "options": [
+      "fuel",
+      "frown",
+      "fulfill",
+      "frost"
+    ],
+    "ans": "C",
+    "exp": "翻译：我们不可能在这么有限的时间内完成如此艰巨的任务。选项：A. fuel（提供燃料，加油）；B. frown（皱眉，蹙额）；C. fulfill；D. frost（蒙上霜，结霜）。答案：C。"
+  },
+  {
+    "id": 8,
+    "type": "单选题",
+    "q": "When talking about Chinese culture, people often _______ its origin with the Yellow River.",
+    "options": [
+      "worship",
+      "vain",
+      "reveal",
+      "associate"
+    ],
+    "ans": "D",
+    "exp": "翻译：当谈论中国文化时,人们常常用黄河来形容它的起源。选项：A. worship（敬奉（神）；爱慕，崇拜）；B. vain（虚荣的，自负的；徒劳的）；C. reveal（揭示，透露）；D. associate。答案：D。"
+  },
+  {
+    "id": 9,
+    "type": "单选题",
+    "q": "It is _______ to anyone here that the department chairman has refused to support the new project.",
+    "options": [
+      "fabulous",
+      "false",
+      "evident",
+      "elastic"
+    ],
+    "ans": "C",
+    "exp": "翻译：大家都明白,系主任拒绝支持这个新项目。选项：A. fabulous（极好的，绝妙的）；B. false；C. evident；D. elastic（有弹性的；灵活的）。答案：C。"
+  },
+  {
+    "id": 10,
+    "type": "单选题",
+    "q": "He _______ his father in appearance but not in height.",
+    "options": [
+      "repeats",
+      "looks",
+      "resembles",
+      "likes"
+    ],
+    "ans": "C",
+    "exp": "翻译：除了身高不同,他和他父亲长的倒蛮像的。选项：A. repeats；B. looks；C. resembles（像，与……相似）；D. likes（喜欢 be like才是像）。答案：C。"
+  },
+  {
+    "id": 11,
+    "type": "单选题",
+    "q": "In order to increase our output, we need to import more production _______.",
+    "options": [
+      "facilities",
+      "fertilizer",
+      "fever",
+      "fare"
+    ],
+    "ans": "A",
+    "exp": "翻译：为增加产量,我们需要进口更多的生产设备。选项：A. facilities（设施；设备）；B. fertilizer（肥料，化肥）；C. fever；D. fare（交通费用）。答案：A。"
+  },
+  {
+    "id": 12,
+    "type": "单选题",
+    "q": "The dog _______ the rabbit but could not catch it.",
+    "options": [
+      "ceased",
+      "chained",
+      "checked",
+      "chased"
+    ],
+    "ans": "D",
+    "exp": "翻译：狗在追兔子，但是抓不到它。选项：A. ceased（停止）；B. chained（束缚）；C. checked；D. chased。答案：D。"
+  },
+  {
+    "id": 13,
+    "type": "单选题",
+    "q": "By completing the swim, the student broke a record _____ held by a 10-year-old boy.",
+    "options": [
+      "preciously",
+      "previously",
+      "probably",
+      "proudly"
+    ],
+    "ans": "B",
+    "exp": "翻译：通过完成游泳赛程，这个学生打破了之前由一名10岁男生创造的纪录。选项：A. preciously（昂贵地；仔细地）；B. previously；C. probably；D. proudly。答案：B。"
+  },
+  {
+    "id": 14,
+    "type": "单选题",
+    "q": "Don’t forget to _______ to let us know you arrived safely.",
+    "options": [
+      "cable",
+      "cage",
+      "border",
+      "bay"
+    ],
+    "ans": "A",
+    "exp": "翻译：不要忘记打电报告诉我们你已经平安到达。选项：A. cable（给……安装有线电视；给……发电报telegram）；B. cage；C. border；D. bay（（海或湖的）湾）。答案：A。"
+  },
+  {
+    "id": 15,
+    "type": "单选题",
+    "q": "Devoted concertgoers reply that recordings are no ____ for live performance.",
+    "options": [
+      "substance",
+      "substitute",
+      "submit",
+      "summary"
+    ],
+    "ans": "B",
+    "exp": "翻译：那些忠实的音乐会观众会讲唱片并不能代替现场的演出。选项：A. substance（物质，材料）；B. substitute；C. submit（提交；屈服）；D. summary。答案：B。"
+  },
+  {
+    "id": 16,
+    "type": "单选题",
+    "q": "You will regret it deeply if you ________ your health for the sake of money or meaningless work.",
+    "options": [
+      "neglect",
+      "reflect",
+      "object",
+      "elect"
+    ],
+    "ans": "A",
+    "exp": "翻译：如果你为了金钱或毫无意义的工作而忽视自己的健康，你会深感后悔。选项：A. neglect（忽略，忽视）；B. reflect（反射（光、热或声音）；反映）；C. object（反对）；D. elect（选举）。答案：A。"
+  },
+  {
+    "id": 17,
+    "type": "单选题",
+    "q": "Protecting the environment is not a choice but a _________ for us to live in a healthy and peaceful world.",
+    "options": [
+      "curiosity",
+      "responsibility",
+      "necessity",
+      "diversity"
+    ],
+    "ans": "C",
+    "exp": "翻译：保护环境不是一种选择，而是我们能生活在健康、宁静世界中的必要之举。选项：A. curiosity（好奇心，求知欲）；B. responsibility；C. necessity；D. diversity（多样性，多样化）。答案：C。"
+  },
+  {
+    "id": 18,
+    "type": "单选题",
+    "q": "The beautiful scenery of nature can always _______ us to love life and cherish every wonderful moment around us.",
+    "options": [
+      "inspect",
+      "inspire",
+      "respect",
+      "aspire"
+    ],
+    "ans": "B",
+    "exp": "翻译：大自然的美景总能激励我们热爱生活，珍惜身边每一个美好的瞬间。选项：A. inspect（检查，审视）；B. inspire（激励，鼓舞）；C. respect；D. aspire（渴望，有志于）。答案：B。"
+  },
+  {
+    "id": 19,
+    "type": "单选题",
+    "q": "It is our ______ policy that we will achieve unity through peaceful means.",
+    "options": [
+      "consistent",
+      "continuous",
+      "considerate",
+      "continual"
+    ],
+    "ans": "A",
+    "exp": "翻译：使用和平手段达到统一是我们一贯的政策。选项：A. consistent（始终如一的，一贯的）；B. continuous（没有间断）；C. considerate；D. continual（允许有间断）。答案：A。"
+  },
+  {
+    "id": 20,
+    "type": "单选题",
+    "q": "The earthquake victims are in _____ need of medical supplies.",
+    "options": [
+      "urge",
+      "agent",
+      "urgent",
+      "exact"
+    ],
+    "ans": "C",
+    "exp": "翻译：地震灾民迫切需要医疗品.。选项：A. urge；B. agent（代理人，代理商）；C. urgent；D. exact。答案：C。"
+  },
+  {
+    "id": 21,
+    "type": "单选题",
+    "q": "We should cherish our _______ time and make full use of every minute to improve ourselves and pursue our dreams.",
+    "options": [
+      "precious",
+      "proactive",
+      "previous",
+      "practical"
+    ],
+    "ans": "A",
+    "exp": "翻译：我们应该珍惜宝贵的时间，充分利用每一分钟来提升自己和追求梦想。选项：A. precious；B. proactive（积极主动的，主动出击的）；C. previous；D. practical（真实的，实际的）。答案：A。"
+  },
+  {
+    "id": 22,
+    "type": "单选题",
+    "q": "It's very ______ of you to prepare everything for me.",
+    "options": [
+      "concerned",
+      "careful",
+      "considerable",
+      "considerate"
+    ],
+    "ans": "D",
+    "exp": "翻译：你为我准备好了一切，真是太体贴了。选项：A. concerned；B. careful；C. considerable（相当大的）；D. considerate。答案：D。"
+  },
+  {
+    "id": 23,
+    "type": "单选题",
+    "q": "This morning in the class, our teacher lost his _______ at last because he could not stand any more.",
+    "options": [
+      "terror",
+      "temperament",
+      "task",
+      "temper  lose one"
+    ],
+    "ans": "D",
+    "exp": "翻译：今天早晨上课时,我们的老师最后发脾气了,因为他再也无法忍受。选项：A. terror（惊恐，恐惧）；B. temperament（气质，性格）；C. task；D. temper  lose one（’s temper）。答案：D。"
+  },
+  {
+    "id": 24,
+    "type": "单选题",
+    "q": "If you had not ________d/ed, I should have finished my work by now. 虚拟语气",
+    "options": [
+      "wander",
+      "insist",
+      "interfere",
+      "dissolve"
+    ],
+    "ans": "C",
+    "exp": "翻译：要不是你打扰我的话,我现在早已完成了我的工作。选项：A. wander；B. insist；C. interfere（打扰）；D. dissolve（解散，解除；（使）溶解）。答案：C。"
+  },
+  {
+    "id": 25,
+    "type": "单选题",
+    "q": "The major offers ______in design and computing.",
+    "options": [
+      "opponent",
+      "options",
+      "optimal",
+      "obvious"
+    ],
+    "ans": "B",
+    "exp": "翻译：这个专业开了设计和计算机技术的选修科目。选项：A. opponent（对手；反对者）；B. options；C. optimal（最佳的，最适的）；D. obvious。答案：B。"
+  },
+  {
+    "id": 26,
+    "type": "单选题",
+    "q": "The recession has ______ ed the housing market.",
+    "options": [
+      "impress",
+      "oppose",
+      "depress",
+      "address"
+    ],
+    "ans": "C",
+    "exp": "翻译：经济衰退使得房地产市场陷入低迷。选项：A. impress；B. oppose（反抗，阻碍）；C. depress（使萧条，使不景气）；D. address（演说，演讲）。答案：C。"
+  },
+  {
+    "id": 27,
+    "type": "单选题",
+    "q": "Fishes generally ______ through gills.",
+    "options": [
+      "inspire",
+      "expire",
+      "perspire",
+      "respire"
+    ],
+    "ans": "D",
+    "exp": "翻译：鱼类通常通过鳃呼吸。选项：A. inspire；B. expire（呼气，吐气；到期，失效）；C. perspire（流汗；分泌）；D. respire（呼吸）。答案：D。"
+  },
+  {
+    "id": 28,
+    "type": "单选题",
+    "q": "We expressed our ______ for her loss.",
+    "options": [
+      "symptom",
+      "symphony",
+      "sympathy",
+      "system"
+    ],
+    "ans": "C",
+    "exp": "翻译：我们对她的损失表示同情。选项：A. symptom（症状）；B. symphony（交响乐 orchestra管弦乐队）；C. sympathy；D. system。答案：C。"
+  },
+  {
+    "id": 29,
+    "type": "单选题",
+    "q": "Operations which left patients______ and in need of long periods of recovery time.",
+    "options": [
+      "sensitive",
+      "exhausted",
+      "deserted",
+      "abandoned"
+    ],
+    "ans": "B",
+    "exp": "翻译：这类手术让病人筋疲力尽，并且需要很长的恢复时间。选项：A. sensitive；B. exhausted；C. deserted（空旷的；被遗弃的）；D. abandoned。答案：B。"
+  },
+  {
+    "id": 30,
+    "type": "单选题",
+    "q": "The salesman ______ the new product to the customers.",
+    "options": [
+      "exhausted",
+      "demonstrated",
+      "dominated",
+      "expanded"
+    ],
+    "ans": "B",
+    "exp": "翻译：售货员向顾客展示了新产品。选项：A. exhausted；B. demonstrated；C. dominated（控制，支配）；D. expanded（扩大）。答案：B。"
+  },
+  {
+    "id": 31,
+    "type": "单选题",
+    "q": "They are trying to ______ the waste discharged by the factory for profit.",
+    "options": [
+      "expose",
+      "exhaust",
+      "exhibit",
+      "exploit"
+    ],
+    "ans": "D",
+    "exp": "翻译：他们正试图利用工厂排放的废料来谋取利益。选项：A. expose（暴露，使显露）；B. exhaust；C. exhibit（展览，展出）；D. exploit（剥削，压榨；利用）。答案：D。"
+  },
+  {
+    "id": 32,
+    "type": "单选题",
+    "q": "Before we move, we should ______ some of the old furniture, so that we can have more room in the new house.",
+    "options": [
+      "discard",
+      "dissipate",
+      "cancel",
+      "conceal"
+    ],
+    "ans": "A",
+    "exp": "翻译：在我们搬家前，我们应该丢掉一些旧家具，这样新房子里就能有更多空间。选项：A. discard；B. dissipate（消散，消失）；C. cancel；D. conceal（隐匿，隐藏）。答案：A。"
+  },
+  {
+    "id": 33,
+    "type": "单选题",
+    "q": "The elephant has been _____ by the trainer at the circus.",
+    "options": [
+      "disposed",
+      "abused",
+      "discouraged",
+      "discarded"
+    ],
+    "ans": "B",
+    "exp": "翻译：这头大象在马戏团里受到了训练员的虐待。选项：A. disposed（处理；配置）；B. abused；C. discouraged（使泄气，使灰心）；D. discarded。答案：B。"
+  },
+  {
+    "id": 34,
+    "type": "单选题",
+    "q": "The ___________ of traditional media has been greatly challenged by the rapid rise of social media around the world in recent years.",
+    "options": [
+      "balance",
+      "importance",
+      "dominance",
+      "maintenance"
+    ],
+    "ans": "C",
+    "exp": "翻译：近年来，传统媒体的主导地位在全球范围内受到了社交媒体迅速崛起的巨大挑战。选项：A. balance；B. importance；C. dominance；D. maintenance（维护，保养）。答案：C。"
+  },
+  {
+    "id": 35,
+    "type": "单选题",
+    "q": "Many visitors _____ along the quiet river enjoying fresh air and beautiful natural views every weekend.",
+    "options": [
+      "consider",
+      "murder",
+      "wonder",
+      "wander"
+    ],
+    "ans": "D",
+    "exp": "翻译：每个周末，许多游客沿着宁静的河边漫步，享受着清新的空气和美丽的自然风光。选项：A. consider；B. murder；C. wonder（想知道，好奇; 惊讶；奇观，奇迹）；D. wander。答案：D。"
+  },
+  {
+    "id": 36,
+    "type": "单选题",
+    "q": "The new________ offers a comfortable and safe living environment for students studying far away from their hometowns.",
+    "options": [
+      "evidence",
+      "residence",
+      "confidence",
+      "dependence"
+    ],
+    "ans": "B",
+    "exp": "翻译：这片新的居所为远离家乡求学的学生们提供了舒适又安全的居住环境。选项：A. evidence（根据，证明）；B. residence；C. confidence；D. dependence。答案：B。"
+  },
+  {
+    "id": 37,
+    "type": "单选题",
+    "q": "The relationship between employers and employees has been studied______.对雇主与雇员之间的关系已经做了细致的研究。",
+    "options": [
+      "originally",
+      "extremely",
+      "violently"
+    ],
+    "ans": "",
+    "exp": "选项：A. originally（起初，原来；独创地）；B. extremely（极度，非常）；C. violently（猛烈地，厉害地）。答案：。"
+  },
+  {
+    "id": 38,
+    "type": "单选题",
+    "q": "For professional athletes, ________ to the Olympics means that they have a chance to enter the history books.对于职业运动员来说, 进入奥林匹克运动会意味着他们有机会载入史册。",
+    "options": [
+      "access",
+      "attachment",
+      "appeal"
+    ],
+    "ans": "",
+    "exp": "选项：A. access（接近，进入）；B. attachment（附加设备，附属物）；C. appeal（呼吁，恳求；上诉）。答案：。"
+  },
+  {
+    "id": 39,
+    "type": "单选题",
+    "q": "It is obvious that this new rule is applicable to everyone without _________.很明显，这项规定毫无例外地适用于所有人。",
+    "options": [
+      "exception",
+      "exclusion",
+      "modification"
+    ],
+    "ans": "",
+    "exp": "选项：A. exception；B. exclusion（排斥，排除在外）；C. modification（修改，更改）。答案：。"
+  },
+  {
+    "id": 40,
+    "type": "单选题",
+    "q": "Although she is a(an) __________ talented dancer. she still practices several hours every day.尽管她特别具有舞蹈天分, 但她还是每天练习几个小时。",
+    "options": [
+      "rationally",
+      "additionally",
+      "traditionally"
+    ],
+    "ans": "",
+    "exp": "选项：A. rationally（理性地）；B. additionally（另外，此外）；C. traditionally。答案：。"
+  },
+  {
+    "id": 41,
+    "type": "单选题",
+    "q": "If businessmen are taxed too much, they will no longer be _______ to work hard, with the result that tax revenues might actually shrink.如果对商人征税过高的话, 他们就不会再有动力努力工作了, 所造成的后果便是税收实际上会萎缩。",
+    "options": [
+      "cultivated",
+      "licensed",
+      "motivated"
+    ],
+    "ans": "",
+    "exp": "选项：A. cultivated（开垦，耕作；栽培）；B. licensed（许可；批准）；C. motivated。答案：。"
+  },
+  {
+    "id": 42,
+    "type": "单选题",
+    "q": "Professor Taylor's talk has indicated that science has a very strong _________ on the everyday life.泰勒教授的讲座表明，科学对日常生活有着非常巨大的影响。",
+    "options": [
+      "motivation",
+      "perspective",
+      "impression"
+    ],
+    "ans": "",
+    "exp": "选项：A. motivation；B. perspective（视角，观点）；C. impression。答案：。"
+  },
+  {
+    "id": 43,
+    "type": "单选题",
+    "q": "It is essential that these application forms _______ back as early as possible. 虚拟语气重要的是这些申请表应当尽早地寄回。",
+    "options": [
+      "must be sent",
+      "will be sent",
+      "are sent"
+    ],
+    "ans": "",
+    "exp": "选项：A. must be sent；B. will be sent；C. are sent。答案：。"
+  },
+  {
+    "id": 44,
+    "type": "单选题",
+    "q": "These goods are _______ for export, though a few of them may be sold on the home market.这些商品基本上用于出口，尽管其中部分也可以在国内市场销售。",
+    "options": [
+      "essentially",
+      "completely",
+      "necessarily"
+    ],
+    "ans": "",
+    "exp": "选项：A. essentially；B. completely（完全地，彻底地）；C. necessarily。答案：。"
+  },
+  {
+    "id": 45,
+    "type": "单选题",
+    "q": "It is _______ for every student to keep a positive attitude and keep trying hard to achieve their goals in study and life.",
+    "options": [
+      "substantial",
+      "essential",
+      "potential",
+      "initial"
+    ],
+    "ans": "B",
+    "exp": "翻译：对每个学生来说，保持积极的态度并不断努力对于在学习和生活中实现目标是至关重要的。选项：A. substantial（大量的；基本的，实质性的）；B. essential（必不可少的，非常重要的）；C. potential；D. initial（开始的，最初的；（字母）位于词首的）。答案：B。"
+  },
+  {
+    "id": 46,
+    "type": "单选题",
+    "q": "I found it difficult to _______ my career ambitions with the need to bring up my children.我觉得很难协调事业上的抱负和抚养孩子的需要。",
+    "options": [
+      "consolidate",
+      "intensify",
+      "amend"
+    ],
+    "ans": "",
+    "exp": "选项：A. consolidate（使巩固，使加强）；B. intensify（加剧，增强）；C. amend（修改，修订；纠正）。答案：。"
+  },
+  {
+    "id": 47,
+    "type": "单选题",
+    "q": "A _______ to this problem is expected to be found before long.人们期望不久之后就能找到这个问题的解决办法。",
+    "options": [
+      "result",
+      "response",
+      "settlement"
+    ],
+    "ans": "",
+    "exp": "选项：A. result；B. response；C. settlement（协议，和解）。答案：。"
+  },
+  {
+    "id": 48,
+    "type": "单选题",
+    "q": "You have nothing to _______ by refusing to listen to our advice.若你拒绝听取我们的建议，你将得不到任何好处。",
+    "options": [
+      "gain",
+      "grasped",
+      "seize"
+    ],
+    "ans": "",
+    "exp": "选项：A. gain（获得，赢得）；B. grasped；C. seize。答案：。"
+  },
+  {
+    "id": 49,
+    "type": "单选题",
+    "q": "A friendly and polite ________ is very important in communication, as it helps us show respect and build good relationships with others.",
+    "options": [
+      "adventure",
+      "gesture",
+      "feature",
+      "temperature"
+    ],
+    "ans": "B",
+    "exp": "翻译：友好且礼貌的姿态在人际交往中十分重要，因为它能帮助我们表达尊重并与他人建立良好的关系。选项：A. adventure；B. gesture；C. feature；D. temperature（温度，气温）。答案：B。"
+  },
+  {
+    "id": 50,
+    "type": "单选题",
+    "q": "With hard work and strong will, many college students have made ______ progress in their study and personal development every year.",
+    "options": [
+      "available",
+      "reasonable",
+      "remarkable",
+      "admirable"
+    ],
+    "ans": "C",
+    "exp": "翻译：凭借努力和坚强的意志，许多大学生每年都在学习和个人发展上取得了显著的进步。选项：A. available（可用的，可获得的）；B. reasonable（有道理的，合情理的）；C. remarkable（引人注目的，非凡的）；D. admirable（令人钦佩的，极其出色的）。答案：C。"
+  },
+  {
+    "id": 51,
+    "type": "单选题",
+    "q": "Many kind people try their best to help every ______ live a peaceful and hopeful life in a safe place.",
+    "options": [
+      "employee",
+      "survivor",
+      "refugee",
+      "supervisor"
+    ],
+    "ans": "C",
+    "exp": "翻译：许多善良的人尽最大努力帮助每一位难民在安全的地方过上平静而充满希望的生活。选项：A. employee；B. survivor（幸存者，生还者）；C. refugee；D. supervisor（令人钦佩的，极其出色的）。答案：C。"
+  },
+  {
+    "id": 52,
+    "type": "单选题",
+    "q": "Please _______ our teacher as soon as possible if you have any questions about your study and daily life at college.",
+    "options": [
+      "act",
+      "react",
+      "interact",
+      "contact"
+    ],
+    "ans": "D",
+    "exp": "翻译：如果你在大学的学习和日常生活中有任何问题，请尽快联系我们的老师。选项：A. act；B. react；C. interact（相互交流，互动）；D. contact。答案：D。"
+  },
+  {
+    "id": 53,
+    "type": "单选题",
+    "q": "Keeping a regular daily _____ is good for our health and helps us work and study more efficiently every day.",
+    "options": [
+      "vaccine",
+      "marine",
+      "routine",
+      "discipline"
+    ],
+    "ans": "C",
+    "exp": "翻译：保持规律的日常作息对我们的健康有益，也能帮助我们每天更高效地工作和学习。选项：A. vaccine（疫苗）；B. marine（海洋的，海产的；海运的，海事的）；C. routine；D. discipline（纪律，风纪）。答案：C。"
+  },
+  {
+    "id": 54,
+    "type": "单选题",
+    "q": "The new plan is much better than the ____ one that we discussed at the meeting last week.",
+    "options": [
+      "previous",
+      "precious",
+      "precise",
+      "predictable"
+    ],
+    "ans": "A",
+    "exp": "翻译：这个新计划比我们上周在会议上讨论的之前那一个要好得多。选项：A. previous；B. precious（宝贵的，珍贵的）；C. precise（精确的，准确的）；D. predictable。答案：A。"
+  },
+  {
+    "id": 55,
+    "type": "单选题",
+    "q": "The design of this auditorium shows a great deal of ________. We have never seen such a building before.大礼堂的设计体现了相当大的独创性, 我们以前从未见过这样的建筑。",
+    "options": [
+      "orientation",
+      "originality",
+      "illusion"
+    ],
+    "ans": "",
+    "exp": "选项：A. orientation（方向，朝向）；B. originality；C. illusion（错觉，幻觉）。答案：。"
+  },
+  {
+    "id": 56,
+    "type": "单选题",
+    "q": "His business was very successful, but it was at the _______ of his family life.他的事业很成功, 但那是以牺牲了家庭生活为代价的。",
+    "options": [
+      "consumption",
+      "expansion",
+      "exhaustion"
+    ],
+    "ans": "",
+    "exp": "选项：A. consumption；B. expansion；C. exhaustion（筋疲力尽）。答案：。"
+  },
+  {
+    "id": 57,
+    "type": "单选题",
+    "q": "The manager spoke highly of such ________ as loyalty, courage and truthfulness shown by his employees.这位经理高度评价了他的员工所表现出的忠诚、勇敢、守信等美德。",
+    "options": [
+      "virtues",
+      "features",
+      "properties"
+    ],
+    "ans": "",
+    "exp": "选项：A. virtues；B. features；C. properties（性质，性能）。答案：。"
+  },
+  {
+    "id": 58,
+    "type": "单选题",
+    "q": "Every man in his country has the right to live where he wants to, _______ the color of his skin.",
+    "options": [
+      "with the exception of",
+      "in the light of",
+      "by virtue of",
+      "regardless of"
+    ],
+    "ans": "D",
+    "exp": "翻译：在他的国度，无论肤色如何，每个人都有权居住在自己想住的地方。选项：A. with the exception of；B. in the light of（表示根据某种事实、观点或情况来评估或解释某事物）；C. by virtue of（凭借；由于）；D. regardless of。答案：D。"
+  },
+  {
+    "id": 59,
+    "type": "单选题",
+    "q": "When I go out in the evening I use the bike _______ the car if I can.晚上出门时, 我尽量骑自行车而不开车。",
+    "options": [
+      "rather than",
+      "regardless of",
+      "in spite of"
+    ],
+    "ans": "",
+    "exp": "选项：A. rather than（而不是）；B. regardless of；C. in spite of。答案：。"
+  },
+  {
+    "id": 60,
+    "type": "单选题",
+    "q": "Mobile telecommunications _______ is expected to double in Shanghai this year as a result of a contract signed between the two companies.根据两家公司所签订的合同，上海今年的移动通讯容量预计会翻一番。",
+    "options": [
+      "capacity",
+      "potential",
+      "possession"
+    ],
+    "ans": "",
+    "exp": "选项：A. capacity；B. potential；C. possession（拥有，持有）。答案：。"
+  },
+  {
+    "id": 61,
+    "type": "单选题",
+    "q": "He soon received promotion, for his superiors realized that he was a man of considerable _________.不久, 他就得到了提升, 因为他的上司们认为他的能力很强。",
+    "options": [
+      "ability",
+      "future",
+      "possibility"
+    ],
+    "ans": "",
+    "exp": "选项：A. ability；B. future；C. possibility。答案：。"
+  },
+  {
+    "id": 62,
+    "type": "单选题",
+    "q": "I hate people who _______ the end of a film that you haven't seen before.我讨厌那些在你还没有看一部新电影之前, 就把电影的结局说出来的人。",
+    "options": [
+      "reveal",
+      "rewrite",
+      "revise"
+    ],
+    "ans": "",
+    "exp": "选项：A. reveal（揭示，透露）；B. rewrite；C. revise（改变，修正）。答案：。"
+  },
+  {
+    "id": 63,
+    "type": "单选题",
+    "q": "The government is trying to do something to ___________ better understanding between the two countries.",
+    "options": [
+      "raise",
+      "promote",
+      "heighten",
+      "increase"
+    ],
+    "ans": "B",
+    "exp": "翻译：政府正在尝试采取一些措施来促进两国之间的相互理解。选项：A. raise；B. promote；C. heighten（提高，增强）；D. increase。答案：B。"
+  },
+  {
+    "id": 64,
+    "type": "单选题",
+    "q": "Anyone who breaks the law will be _______ with serious crimes and punished accordingly.",
+    "options": [
+      "accused",
+      "charged",
+      "scolded",
+      "cursed"
+    ],
+    "ans": "B",
+    "exp": "翻译：任何触犯法律的人都将被指控犯有严重罪行，并受到相应惩罚。选项：A. accused（也是指控，但是搭配of使用）；B. charged；C. scolded（责骂，训斥）；D. cursed。答案：B。"
+  },
+  {
+    "id": 65,
+    "type": "单选题",
+    "q": "The _______ student who studies hard always gets high marks in all kinds of exams.",
+    "options": [
+      "independent",
+      "intelligent",
+      "efficient",
+      "excellent"
+    ],
+    "ans": "B",
+    "exp": "翻译：那位努力学习的聪明学生，在各类考试中总是取得高分。选项：A. independent；B. intelligent；C. efficient；D. excellent（极好的，卓越的）。答案：B。"
+  },
+  {
+    "id": 66,
+    "type": "单选题",
+    "q": "Every _____ dreams of winning a gold medal in the Olympic Games through years of hard training.",
+    "options": [
+      "author",
+      "athlete",
+      "artist",
+      "astronaut"
+    ],
+    "ans": "B",
+    "exp": "翻译：每位运动员都梦想通过多年的刻苦训练在奥运会上赢得金牌。选项：A. author；B. athlete；C. artist；D. astronaut（宇航员）。答案：B。"
+  },
+  {
+    "id": 67,
+    "type": "单选题",
+    "q": "We should respect every culture instead of looking down on others with a sense of _______.",
+    "options": [
+      "inferiority",
+      "superiority",
+      "security",
+      "minority"
+    ],
+    "ans": "B",
+    "exp": "翻译：我们应当尊重每种文化，而不是带着优越感去轻视他人。选项：A. inferiority（低等，劣等）；B. superiority；C. security；D. minority。答案：B。"
+  },
+  {
+    "id": 68,
+    "type": "单选题",
+    "q": "________, only by setting clear goals and working hard can we overcome difficulties and achieve our dreams in the future.",
+    "options": [
+      "Eventually",
+      "Additionally",
+      "Consequently",
+      "Evidently"
+    ],
+    "ans": "D",
+    "exp": "翻译：显然，只有树立明确的目标并为之努力，我们才能在未来克服困难，实现自己的梦想。选项：A. Eventually；B. Additionally；C. Consequently（因此，结果）；D. Evidently。答案：D。"
+  },
+  {
+    "id": 69,
+    "type": "单选题",
+    "q": "Proper preparation can effectively reduce ________ before you take an important exam or give a speech.",
+    "options": [
+      "consciousness",
+      "nervousness",
+      "loneliness",
+      "happiness"
+    ],
+    "ans": "B",
+    "exp": "翻译：适当的准备可以有效减轻你在参加重要考试或演讲前的紧张情绪。选项：A. consciousness；B. nervousness；C. loneliness；D. happiness。答案：B。"
+  },
+  {
+    "id": 70,
+    "type": "单选题",
+    "q": "Green was sent off because he committed a ______ that made other players get injured seriously.",
+    "options": [
+      "fool",
+      "fall",
+      "foul",
+      "fail"
+    ],
+    "ans": "C",
+    "exp": "翻译：因为犯规导致其他球员严重受伤，格林被罚下场。选项：A. fool；B. fall；C. foul；D. fail。答案：C。"
+  },
+  {
+    "id": 71,
+    "type": "单选题",
+    "q": "He _____ regretted that he had not taken his teacher's useful advice before the exam.",
+    "options": [
+      "bitterly",
+      "barely",
+      "briefly",
+      "badly"
+    ],
+    "ans": "A",
+    "exp": "翻译：他痛苦地后悔自己在考试前没有采纳老师有用的建议。选项：A. bitterly；B. barely；C. briefly；D. badly。答案：A。"
+  },
+  {
+    "id": 72,
+    "type": "单选题",
+    "q": "The sudden sound from behind made me ______ and nearly drop the book in my hand.",
+    "options": [
+      "shuttle",
+      "startle",
+      "settle",
+      "subtle"
+    ],
+    "ans": "B",
+    "exp": "翻译：身后突然传来的声音吓了我一跳，我手里的书差点掉在地上。选项：A. shuttle（航天飞机；往返于两地的交通工具，摆渡车）；B. startle；C. settle（解决，结束；定居，安家）；D. subtle（不易察觉的，微妙的）。答案：B。"
+  },
+  {
+    "id": 73,
+    "type": "单选题",
+    "q": "The soldier was ______ of running away when the enemy attacked.这名士兵因为在遇袭时临阵脱逃而受到了指责。",
+    "options": [
+      "scolded",
+      "charged",
+      "accused"
+    ],
+    "ans": "",
+    "exp": "选项：A. scolded（责骂，训斥）；B. charged（控告，指控）；C. accused（指责，谴责）。答案：。"
+  },
+  {
+    "id": 74,
+    "type": "单选题",
+    "q": "______ recent developments we do not think your scheme is practical.考虑到最近的进展情况, 我们认为你的计划不实际。",
+    "options": [
+      "In view of",
+      "In favor of",
+      "In case of"
+    ],
+    "ans": "",
+    "exp": "选项：A. In view of（考虑到；鉴于）；B. In favor of（支持；赞同）；C. In case of（假如）。答案：。"
+  },
+  {
+    "id": 75,
+    "type": "单选题",
+    "q": "In the long ______, the new information technologies may fundamentally alter our way of life.从长远观点来看, 新的信息技术也许会从根本上改变我们的生活方式。",
+    "options": [
+      "view",
+      "distance",
+      "jump"
+    ],
+    "ans": "",
+    "exp": "选项：A. view；B. distance；C. jump。答案：。"
+  },
+  {
+    "id": 76,
+    "type": "单选题",
+    "q": "According to the new tax law, any money earned over that level is taxed at the _____ of 59 percent.根据新税法，超过该标准的所有收入都将按59%的税率征税。",
+    "options": [
+      "ratio",
+      "percentage",
+      "proportion"
+    ],
+    "ans": "",
+    "exp": "选项：A. ratio（比率，比例）；B. percentage（百分比）；C. proportion（份额；比例）。答案：。"
+  },
+  {
+    "id": 77,
+    "type": "单选题",
+    "q": "It may be necessary to stop ______ in the learning process and go back to the difficult points in the lessons.在学习过程中也许有必要每隔一段时间停下来, 再回头复习一下课文中的难点。",
+    "options": [
+      "at a distance",
+      "at intervals",
+      "at ease"
+    ],
+    "ans": "",
+    "exp": "选项：A. at a distance（从远处的地方）；B. at intervals（有间隔地）；C. at ease（放松、安逸；在军事上，这个短语用于命令士兵放松姿势“稍息”）。答案：。"
+  },
+  {
+    "id": 78,
+    "type": "单选题",
+    "q": "The lecture which lasted about three hours was so ______ that the audience couldn’t help yawning.持续了大约三个小时的讲座实在无聊, 听众都禁不住打哈欠了。",
+    "options": [
+      "tedious",
+      "bored",
+      "clumsy"
+    ],
+    "ans": "",
+    "exp": "选项：A. tedious（冗长的，单调乏味的 讲座无聊用tedious）；B. bored（人感到厌烦无聊，才用bored，搭配人不搭配物）；C. clumsy（笨拙的，不灵活的）。答案：。"
+  },
+  {
+    "id": 79,
+    "type": "单选题",
+    "q": "Europe’s earlier industrial growth was ______ by the availability of key resources, abundant and cheap labor, coal, iron ore, etc.欧洲早期的工业增长是由于有丰富的重要资源、充足而廉价的劳动力、煤炭、矿石等作支撑。",
+    "options": [
+      "constrained",
+      "remained",
+      "sustained"
+    ],
+    "ans": "",
+    "exp": "选项：A. constrained（驱使；强迫）；B. remained；C. sustained（支持，支撑 sustainable development可持续性发展）。答案：。"
+  },
+  {
+    "id": 80,
+    "type": "单选题",
+    "q": "Having a(n) ______ attitude towards people with different ideas is an indication that one has been well educated.对持有不同观点的人采取宽容的态度, 这表明一个人受过良好的教育.",
+    "options": [
+      "analytical",
+      "bearable",
+      "elastic"
+    ],
+    "ans": "",
+    "exp": "选项：A. analytical；B. bearable（可忍受的）；C. elastic（有弹性的；灵活的）。答案：。"
+  },
+  {
+    "id": 81,
+    "type": "单选题",
+    "q": "Henry went through the documents again carefully for fear of ______ any important data.亨利又仔细看了一遍文件, 惟恐漏看任何重要数据。",
+    "options": [
+      "relaying",
+      "overlooking",
+      "deleting"
+    ],
+    "ans": "",
+    "exp": "选项：A. relaying（传递，传达）；B. overlooking（忽视，忽略）；C. deleting。答案：。"
+  },
+  {
+    "id": 82,
+    "type": "单选题",
+    "q": "Tony has not the least ______ of giving up his research work.托尼一点都不想放弃他的研究工作。",
+    "options": [
+      "intention",
+      "interest",
+      "wish"
+    ],
+    "ans": "",
+    "exp": "选项：A. intention（目的，打算）；B. interest；C. wish。答案：。"
+  },
+  {
+    "id": 83,
+    "type": "单选题",
+    "q": "His temper and personality show that he can become a soldier of the top ______.他的脾气和性格表明他能够成为一名顶尖的士兵。",
+    "options": [
+      "circle",
+      "rank",
+      "category"
+    ],
+    "ans": "",
+    "exp": "选项：A. circle；B. rank（军衔，军阶）；C. category。答案：。"
+  },
+  {
+    "id": 84,
+    "type": "单选题",
+    "q": "The novel contains some marvelously revealing ______ of rural life in the 19th century.这部小说有多处描写精彩地呈现了19 世纪的乡村生活。",
+    "options": [
+      "gloves",
+      "glimpses",
+      "glories"
+    ],
+    "ans": "",
+    "exp": "选项：A. gloves；B. glimpses（一瞥，一看）；C. glories。答案：。"
+  },
+  {
+    "id": 85,
+    "type": "单选题",
+    "q": "I have my eyes tested and the report says that my ______ is perfect.",
+    "options": [
+      "outlook",
+      "vision",
+      "horizon",
+      "perspective"
+    ],
+    "ans": "B",
+    "exp": "翻译：我检查了我的眼睛，检查报告表明我的视力很好。选项：A. outlook（前景，展望；景色）；B. vision（视力，视觉）；C. horizon（地平线；眼界）；D. perspective（视角，观点）。答案：B。"
+  },
+  {
+    "id": 86,
+    "type": "单选题",
+    "q": "It ______ you to at least 50% off the regular price of either frames or lenses when you buy both.如果镜框和镜片都买的话, 你可以享受其中任何一样的至少50%的优惠。",
+    "options": [
+      "presents",
+      "entitles",
+      "credits"
+    ],
+    "ans": "",
+    "exp": "选项：A. presents；B. entitles（给予……权利（资格））；C. credits。答案：。"
+  },
+  {
+    "id": 87,
+    "type": "单选题",
+    "q": "I will cherish every ________ to pursue my dream and never give up even when facing difficulties and failures.",
+    "options": [
+      "assistant",
+      "servant",
+      "instant",
+      "distant"
+    ],
+    "ans": "C",
+    "exp": "翻译：我会珍惜每一个瞬间去追逐梦想，即使面对困难与失败也永不放弃。选项：A. assistant；B. servant；C. instant；D. distant。答案：C。"
+  },
+  {
+    "id": 88,
+    "type": "单选题",
+    "q": "The warm smile and sincere kindness of a friend can easily _____ our loneliness and coldness in difficult times.",
+    "options": [
+      "merge",
+      "melt",
+      "mix",
+      "measure"
+    ],
+    "ans": "B",
+    "exp": "翻译：朋友温暖的笑容和真挚的善意，能轻易融化我们在困境中的孤独与冷漠。选项：A. merge（合并，结合，并入）；B. melt；C. mix；D. measure。答案：B。"
+  },
+  {
+    "id": 89,
+    "type": "单选题",
+    "q": "Regular exercise can help us build a strong and ______ body, improve our overall health, and make us more confident in daily life and work.",
+    "options": [
+      "particular",
+      "popular",
+      "muscular",
+      "muscle"
+    ],
+    "ans": "C",
+    "exp": "翻译：规律的运动能帮助我们打造强壮健硕的体魄，提升整体健康状况，并让我们在日常生活和工作中更加自信。选项：A. particular；B. popular；C. muscular；D. muscle。答案：C。"
+  },
+  {
+    "id": 90,
+    "type": "单选题",
+    "q": "Though he has a slender______, he remains energetic and confident when facing challenges in his study and daily life.",
+    "options": [
+      "fragment",
+      "fraction",
+      "framework",
+      "frame"
+    ],
+    "ans": "D",
+    "exp": "翻译：尽管他有着纤细的身躯，但在面对学习和日常生活中的挑战时，他依然精力充沛、充满自信。选项：A. fragment（碎片）；B. fraction（分数，小数）；C. framework（构架，结构）；D. frame。答案：D。"
+  }
+]
