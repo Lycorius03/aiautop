@@ -10,7 +10,7 @@ const mfaw = new MFAW(state.settings.mfaw || {});
 
 /** 切换刷题模式 */
 export function switchMode(mode) {
-  if (mode !== 'home' && state.questionBank.length === 0) {
+  if (mode !== 'home' && mode !== 'settings' && state.questionBank.length === 0) {
     showToast('请先导入或选择题库！', 'error');
     navigateTo('home');
     return;
