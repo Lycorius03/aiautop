@@ -27,6 +27,44 @@ export const SAMPLE_TEMPLATE = [
   }
 ];
 
+/** AI 题库转换提示词（用户可复制给任意 AI） */
+export const AI_CONVERT_PROMPT = `你是一个英语题库格式转换助手。请将用户提供的任意单选题（包括题干、四个选项、正确答案及解析），严格按照以下JSON模板输出：
+
+{
+  "id": 自动递增数字（从1开始）,
+  "type": "单选题",
+  "q": "英文题干（保留原标点）",
+  "options": ["选项A", "选项B", "选项C", "选项D"],
+  "ans": "正确选项字母（大写，如A）",
+  "exp": "【翻译】此处写中文翻译。\\n【考点】此处写考点/语法/搭配说明。\\n【选项】A. 解释；B. 解释；C. 解释；D. 解释。\\n【答案】正确选项字母。"
+}
+
+要求：
+1. 翻译要准确、通顺。
+2. 考点部分简要说明关键语法、固定搭配或句型。
+3. 选项解释需逐项给出中文含义，若为短语则说明完整用法。
+4. 如果用户提供了解析，请整合进exp；若未提供，请自行补充合理的考点和选项释义。
+5. 输出只需包含JSON数组（即多个对象组成的列表），不要添加额外文字。
+6. 如果题目数量超过1题，请按顺序生成数组，id连续递增。
+
+现在请将以下题目按上述格式转换：`;
+
+/** 渲染提示词到页面 */
+export function renderPrompt() {
+  const el = document.getElementById('prompt-code');
+  if (el) el.textContent = AI_CONVERT_PROMPT;
+}
+
+/** 复制提示词 */
+export async function copyPrompt() {
+  try {
+    await copyToClipboard(AI_CONVERT_PROMPT);
+    showToast('提示词已复制！粘贴到 ChatGPT / DeepSeek 等 AI 即可使用', 'success');
+  } catch (e) {
+    showToast('复制失败，请手动选择复制', 'error');
+  }
+}
+
 /** 渲染题库列表 */
 export function renderBankList() {
   const container = document.getElementById('bank-list-container');

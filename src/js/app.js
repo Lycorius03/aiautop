@@ -4,8 +4,9 @@
  */
 import { state } from './state.js';
 import {
-  renderBankList, renderTemplate, copyTemplate, importBankFile,
-  handleFileImport, importBankFromText, aiGenerateQuiz, deleteAllBanks, exportFullBackup
+  renderBankList, renderTemplate, renderPrompt, copyTemplate, copyPrompt,
+  importBankFile, handleFileImport, importBankFromText, aiGenerateQuiz,
+  deleteAllBanks, exportFullBackup
 } from './modules/bank-manager.js';
 import { switchMode, navigateTo, loadQuestion, nextQuestion, prevQuestion, jumpToQuestion,
          toggleFavorite, clearProgress, updateStatsUI, handleKeyboard } from './modules/quiz-engine.js';
@@ -17,6 +18,7 @@ import { showToast } from './utils/helpers.js';
 async function init() {
   state.init();
   renderTemplate();
+  renderPrompt();
   renderBankList();
   updateStatsUI();
 
@@ -66,9 +68,9 @@ function bindGlobalEvents() {
     });
   }
 
-  // 复制模板
-  const copyBtn = document.getElementById('copy-template-btn');
-  if (copyBtn) copyBtn.addEventListener('click', copyTemplate);
+  // 复制模板 & 提示词
+  document.getElementById('copy-template-btn')?.addEventListener('click', copyTemplate);
+  document.getElementById('copy-prompt-btn')?.addEventListener('click', copyPrompt);
 
   // 删除所有题库
   const delAllBtn = document.getElementById('delete-all-btn');

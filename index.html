@@ -92,6 +92,16 @@
       </div>
     </div>
 
+    <!-- AI 转换提示词模板 -->
+    <div class="template-section" style="margin-top:1.5rem;border-top:1px solid var(--border-color);padding-top:1.5rem;">
+      <h4>🤖 AI 题库转换提示词 <span class="tag tag-muted" style="font-size:0.7rem;">复制给 ChatGPT / DeepSeek</span></h4>
+      <p class="text-sm text-muted" style="margin-bottom:0.5rem;">
+        复制下方提示词，粘贴到任意 AI（ChatGPT、DeepSeek、Kimi 等），然后发送你的题目，AI 将自动生成符合格式的 JSON 题库。
+      </p>
+      <button class="btn btn-outline" id="copy-prompt-btn" style="margin-bottom:0.5rem;">📋 复制提示词</button>
+      <pre style="background:var(--bg-code);color:#e2e8f0;padding:1rem;border-radius:8px;overflow-x:auto;font-size:0.78rem;line-height:1.5;max-height:350px;overflow-y:auto;"><code id="prompt-code"></code></pre>
+    </div>
+
     <!-- 刷题提示 -->
     <div style="text-align:center;margin-top:3rem;color:var(--text-light);">
       <h3>🚀 开始刷题</h3>
