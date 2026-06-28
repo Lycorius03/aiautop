@@ -223,7 +223,7 @@ function importBackup(data) {
 /** AI 生成题库 */
 export async function aiGenerateQuiz(sourceText) {
   // 检查 API Key 是否已配置
-  const providerConfig = aiService.getProviderConfig();
+  const providerConfig = await aiService.getProviderConfig();
   if (!providerConfig || !providerConfig.apiKey) {
     showToast('请先在"设置"页面配置 AI 服务商的 API Key', 'error');
     return;

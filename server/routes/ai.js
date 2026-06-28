@@ -66,18 +66,25 @@ router.post('/convert-to-quiz', async (req, res) => {
 
     const providerConfig = userConfig && userConfig.apiKey ? userConfig : resolveConfig(req);
 
-    const prompt = `你是一个题库生成专家。请将以下内容转换为选择题题库的 JSON 格式。
+    const prompt = `你是一个专业题库生成专家。请将以下文档内容转换为选择题题库的 JSON 格式。
 
-## 要求
-1. 每道题包含：id（从1开始的数字）、type（"单选题"或"多选题"）、q（题目）、options（4个选项的数组）、ans（正确答案，如"A"）、exp（答案解析，含翻译和详细解释）
-2. 只提取适合作为选择题的知识点
-3. 选项要有迷惑性但只有一个正确答案（多选题除外）
-4. 解析要准确、详尽，包含翻译（如适用）
-5. 至少生成3道题，最多30道题
-6. 只输出 JSON 数组，不要其他内容，不要 markdown 代码块标记
+## 严格要求
+1. 每道题必须包含以下字段：
+   - id: 从 1 开始递增的数字
+   - type: "单选题" 或 "多选题"
+   - q: 题目内容（保留原文的准确表述）
+   - options: 包含4个选项的数组，如 ["A选项", "B选项", "C选项", "D选项"]
+   - ans: 正确答案字母（如 "A"；多选题如 "AB"）
+   - exp: 详细解析，包含翻译（如为英语题）、考点说明、每个选项的解释、为什么选正确答案
+2. 只提取有明确知识点的内容，不要生成无意义的题目
+3. 选项设计要有区分度，干扰项要有迷惑性
+4. 至少生成 3 道题，最多 30 道题
+5. 你的整个回复必须是一个纯 JSON 数组，以 [ 开头、以 ] 结尾
+6. 严禁使用 markdown 代码块（不要 \`\`\`json），严禁在 JSON 前后添加任何说明文字
+7. 确保 JSON 是合法可解析的（注意字符串内的引号要转义）
 
-## 内容
-${text.slice(0, 20000)}`;
+## 文档内容
+${text.slice(0, 40000)}`;
 
     console.log(`[AI-ROUTE] Converting to quiz: ${filename || 'text'} (${text.length} chars)`);
     const result = await generateAI(prompt, providerConfig);

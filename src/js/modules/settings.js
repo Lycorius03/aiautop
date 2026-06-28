@@ -6,6 +6,7 @@ import { state } from '../state.js';
 import { storage, STORAGE_KEYS } from '../services/storage.js';
 import { aiService } from '../services/ai-service.js';
 import { showToast, escapeHtml } from '../utils/helpers.js';
+import { encryptApiKey, decryptApiKey } from '../utils/crypto.js';
 import { updateMFAWParams } from './quiz-engine.js';
 
 // 内置服务商预设
@@ -50,7 +51,7 @@ export function renderSettings() {
           <div class="model-card">
             <div class="model-info">
               <div class="model-name">${escapeHtml(m.provider)} / ${escapeHtml(m.model)}</div>
-              <div class="model-meta">${escapeHtml(m.baseUrl)} ${m.default ? '· <span style="color:var(--primary-color)">默认</span>' : ''}</div>
+              <div class="model-meta">${escapeHtml(m.baseUrl)} | Key: ${maskKey(m.apiKey)} ${m.default ? '· <span style="color:var(--primary-color)">默认</span>' : ''}</div>
             </div>
             <div class="model-actions">
               ${!m.default ? `<button class="btn-mini" data-set-default="${i}">设为默认</button>` : ''}
@@ -138,8 +139,8 @@ function bindSettingsEvents() {
     }
   });
 
-  // 保存模型
-  document.getElementById('save-model-btn')?.addEventListener('click', () => {
+  // 保存模型（加密 API Key）
+  document.getElementById('save-model-btn')?.addEventListener('click', async () => {
     const provider = document.getElementById('model-preset')?.value || '自定义';
     const baseUrl = document.getElementById('model-base-url')?.value.trim();
     const model = document.getElementById('model-name')?.value.trim();
@@ -150,14 +151,20 @@ function bindSettingsEvents() {
       return;
     }
 
-    const models = getModels();
-    const newModel = { provider, baseUrl, model, apiKey, default: models.length === 0 };
-    models.push(newModel);
-    saveModels(models);
-    renderSettings();
-    clearModelForm();
-    document.getElementById('add-model-form').classList.add('hidden');
-    showToast('模型已保存', 'success');
+    try {
+      const encrypted = await encryptApiKey(apiKey);
+      const models = getModels();
+      const newModel = { provider, baseUrl, model, apiKey: encrypted, default: models.length === 0 };
+      models.push(newModel);
+      saveModels(models);
+      aiService.clearCache();
+      renderSettings();
+      clearModelForm();
+      document.getElementById('add-model-form').classList.add('hidden');
+      showToast('模型已保存（API Key 已加密存储）', 'success');
+    } catch (e) {
+      showToast('加密失败：' + e.message, 'error');
+    }
   });
 
   // 模型列表操作（事件委托）
@@ -169,11 +176,12 @@ function bindSettingsEvents() {
     const models = getModels();
 
     if (btn.dataset.test !== undefined) {
-      // 测试连接
+      // 测试连接（先解密）
       const m = models[idx];
       showToast('正在测试连接...');
       try {
-        const result = await aiService.testConnection(m);
+        const decryptedKey = await decryptApiKey(m.apiKey);
+        const result = await aiService.testConnection({ ...m, apiKey: decryptedKey });
         showToast(`连接成功！模型: ${result.model}`, 'success');
       } catch (err) {
         showToast('连接失败：' + err.message, 'error');
@@ -210,6 +218,13 @@ function bindSettingsEvents() {
     });
     updateMFAWParams(params);
   });
+}
+
+function maskKey(key) {
+  if (!key) return '(未设置)';
+  if (key.startsWith('aes:')) return '(已加密)';
+  if (key.startsWith('sk-')) return key.slice(0, 6) + '...' + key.slice(-4);
+  return key.slice(0, 4) + '...' + (key.length > 8 ? key.slice(-4) : '');
 }
 
 function clearModelForm() {

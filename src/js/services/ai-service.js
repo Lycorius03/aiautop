@@ -3,27 +3,41 @@
  * 与后端 AI 代理通信，支持用户配置的多服务商
  */
 import { storage, STORAGE_KEYS } from './storage.js';
+import { decryptApiKey } from '../utils/crypto.js';
 
 export class AIService {
   constructor() {
     this._providerConfig = null;
+    this._decryptedCache = null;
   }
 
-  /** 获取用户配置的活跃服务商 */
-  getProviderConfig() {
-    if (this._providerConfig) return this._providerConfig;
+  /** 获取用户配置的活跃服务商（自动解密） */
+  async getProviderConfig() {
+    if (this._decryptedCache) return this._decryptedCache;
 
     const models = storage.get(STORAGE_KEYS.MODELS, []);
     const active = models.find(m => m.default) || models[0];
     if (!active || !active.apiKey) return null;
 
-    this._providerConfig = {
-      apiKey: active.apiKey,
-      baseUrl: (active.baseUrl || '').replace(/\/+$/, ''),
-      model: active.model,
-      provider: active.provider
-    };
-    return this._providerConfig;
+    try {
+      const decrypted = await decryptApiKey(active.apiKey);
+      this._decryptedCache = {
+        apiKey: decrypted,
+        baseUrl: (active.baseUrl || '').replace(/\/+$/, ''),
+        model: active.model,
+        provider: active.provider
+      };
+      return this._decryptedCache;
+    } catch (e) {
+      console.warn('API Key 解密失败，请重新配置');
+      return null;
+    }
+  }
+
+  /** 清除缓存（模型配置变更后调用） */
+  clearCache() {
+    this._providerConfig = null;
+    this._decryptedCache = null;
   }
 
   /** 清除缓存（模型配置变更后调用） */
@@ -45,7 +59,7 @@ export class AIService {
 
   /** AI 将文本转换为题库 */
   async convertToQuiz(text, filename) {
-    const providerConfig = this.getProviderConfig();
+    const providerConfig = await this.getProviderConfig();
     if (!providerConfig) throw new Error('请先在设置中配置 AI 服务商和 API Key');
 
     const resp = await fetch('/api/ai/convert-to-quiz', {
@@ -55,8 +69,8 @@ export class AIService {
     });
 
     if (!resp.ok) {
-      const err = await resp.json();
-      throw new Error(err.error || 'AI 转换失败');
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.error || `AI 转换失败 (${resp.status})`);
     }
     return resp.json();
   }
