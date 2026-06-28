@@ -3,6 +3,10 @@
  */
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
+const upload = multer({ dest: path.join(__dirname, '..', '..', 'data', 'uploads') });
 const { generateAI, testConnection } = require('../services/ai-provider');
 
 /**
@@ -104,6 +108,53 @@ ${text.slice(0, 20000)}`;
   } catch (err) {
     console.error('[AI-ROUTE] Convert error:', err);
     res.status(500).json({ error: 'AI 转换失败：' + err.message });
+  }
+});
+
+// POST /api/ai/parse-file — 解析上传的文件（txt/md/json/docx/pdf）
+router.post('/parse-file', upload.single('file'), async (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: '请上传文件' });
+
+    const ext = path.extname(req.file.originalname).toLowerCase();
+    const filePath = req.file.path;
+    let text = '';
+
+    if (ext === '.txt' || ext === '.md' || ext === '.json') {
+      text = fs.readFileSync(filePath, 'utf-8');
+    } else if (ext === '.docx') {
+      try {
+        const mammoth = require('mammoth');
+        const result = await mammoth.extractRawText({ path: filePath });
+        text = result.value;
+      } catch (e) {
+        return res.status(422).json({ error: 'DOCX 解析失败：' + e.message });
+      }
+    } else if (ext === '.pdf') {
+      try {
+        const pdfParse = require('pdf-parse');
+        const dataBuffer = fs.readFileSync(filePath);
+        const data = await pdfParse(dataBuffer);
+        text = data.text;
+      } catch (e) {
+        return res.status(422).json({ error: 'PDF 解析失败：' + e.message });
+      }
+    } else {
+      return res.status(400).json({ error: '不支持的文件格式：' + ext + '，请使用 txt/md/json/docx/pdf' });
+    }
+
+    // 清理上传的临时文件
+    fs.unlink(filePath, () => {});
+
+    if (!text || !text.trim()) {
+      return res.status(422).json({ error: '文件内容为空或无法提取文字' });
+    }
+
+    console.log(`[AI-ROUTE] File parsed: ${req.file.originalname} → ${text.length} chars`);
+    res.json({ text: text.trim(), filename: req.file.originalname, chars: text.length });
+  } catch (err) {
+    console.error('[AI-ROUTE] Parse file error:', err);
+    res.status(500).json({ error: '文件解析失败：' + err.message });
   }
 });
 

@@ -15,6 +15,8 @@ const PORT = process.env.PORT || 3000;
 // 确保数据目录存在
 const dataDir = path.join(__dirname, 'data');
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+const uploadsDir = path.join(__dirname, 'data', 'uploads');
+if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
 
 // 中间件
 app.use(express.json({ limit: '50mb' }));

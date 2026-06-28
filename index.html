@@ -72,7 +72,13 @@
 
       <!-- AI 输入区 -->
       <div id="ai-input-area" class="hidden mt-4">
-        <textarea class="form-textarea" id="ai-input-text" rows="5" placeholder="粘贴文本内容（DOCX/MD/PDF/TXT 中的文字），AI 将自动生成选择题题库..."></textarea>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+          <span class="text-sm text-muted" id="ai-file-name" style="flex:1;"></span>
+          <input type="file" id="ai-file-input" style="display:none;" accept=".txt,.md,.json,.docx,.pdf">
+          <button class="btn-mini" id="ai-file-btn">上传文件</button>
+          <span class="text-sm text-muted">支持 txt / md / json / docx / pdf</span>
+        </div>
+        <textarea class="form-textarea" id="ai-input-text" rows="5" placeholder="粘贴文本内容，或点击"上传文件"按钮选择文件..."></textarea>
       </div>
 
       <!-- JSON 模板 -->

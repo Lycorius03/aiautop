@@ -6,7 +6,7 @@ import { state } from './state.js';
 import {
   renderBankList, renderTemplate, renderPrompt, copyTemplate, copyPrompt,
   importBankFile, handleFileImport, importBankFromText, aiGenerateQuiz,
-  deleteAllBanks, exportFullBackup
+  handleAIFileUpload, deleteAllBanks, exportFullBackup
 } from './modules/bank-manager.js';
 import { switchMode, navigateTo, loadQuestion, nextQuestion, prevQuestion, jumpToQuestion,
          toggleFavorite, clearProgress, updateStatsUI, handleKeyboard } from './modules/quiz-engine.js';
@@ -52,7 +52,7 @@ function bindGlobalEvents() {
     if (text && text.trim()) importBankFromText(text.trim());
   });
 
-  // AI 生成（先展开输入区，再点生成）
+  // AI 生成按钮：展开/收起输入区
   const aiGenBtn = document.getElementById('ai-generate-btn');
   const aiInputArea = document.getElementById('ai-input-area');
   if (aiGenBtn && aiInputArea) {
@@ -62,10 +62,16 @@ function bindGlobalEvents() {
         aiGenBtn.textContent = '开始 AI 生成';
       } else {
         aiGenerateQuiz();
-        aiInputArea.classList.add('hidden');
-        aiGenBtn.textContent = 'AI 生成题库';
       }
     });
+  }
+
+  // AI 文件上传
+  const aiFileBtn = document.getElementById('ai-file-btn');
+  const aiFileInput = document.getElementById('ai-file-input');
+  if (aiFileBtn && aiFileInput) {
+    aiFileBtn.addEventListener('click', () => aiFileInput.click());
+    aiFileInput.addEventListener('change', () => handleAIFileUpload(aiFileInput));
   }
 
   // 复制模板 & 提示词

@@ -221,16 +221,24 @@ function importBackup(data) {
 }
 
 /** AI 生成题库 */
-export async function aiGenerateQuiz() {
-  const text = document.getElementById('ai-input-text')?.value?.trim();
-  if (!text) { showToast('请粘贴要生成题库的文本内容', 'error'); return; }
+export async function aiGenerateQuiz(sourceText) {
+  // 检查 API Key 是否已配置
+  const providerConfig = aiService.getProviderConfig();
+  if (!providerConfig || !providerConfig.apiKey) {
+    showToast('请先在"设置"页面配置 AI 服务商的 API Key', 'error');
+    return;
+  }
+
+  const text = sourceText || document.getElementById('ai-input-text')?.value?.trim();
+  if (!text) { showToast('请粘贴文本或上传文件', 'error'); return; }
 
   const btn = document.getElementById('ai-generate-btn');
+  const origText = btn.textContent;
   btn.disabled = true;
   btn.textContent = 'AI 生成中...';
 
   try {
-    const result = await aiService.convertToQuiz(text, '手动输入');
+    const result = await aiService.convertToQuiz(text, 'AI 生成');
     if (result.questions && result.questions.length > 0) {
       const name = prompt('请输入生成的题库名称：', 'AI生成题库') || 'AI生成题库';
       const bank = state.addBank(name.trim(), result.questions);
@@ -238,12 +246,70 @@ export async function aiGenerateQuiz() {
       renderBankList();
       updateUIAfterBankChange();
       showToast(`AI 已生成 ${result.questions.length} 道题目！`, 'success');
+      // 清空输入区
+      const ta = document.getElementById('ai-input-text');
+      if (ta) ta.value = '';
+      document.getElementById('ai-input-area')?.classList.add('hidden');
     }
   } catch (err) {
     showToast('AI 生成失败：' + err.message, 'error');
   } finally {
     btn.disabled = false;
-    btn.textContent = 'AI 生成题库';
+    btn.textContent = origText;
+  }
+}
+
+/** 处理 AI 文件上传 */
+export function handleAIFileUpload(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const ext = file.name.split('.').pop().toLowerCase();
+
+  if (ext === 'txt' || ext === 'md' || ext === 'json') {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const text = e.target.result;
+      const ta = document.getElementById('ai-input-text');
+      if (ta) ta.value = text;
+      document.getElementById('ai-input-area')?.classList.remove('hidden');
+      document.getElementById('ai-file-name') && (document.getElementById('ai-file-name').textContent = file.name);
+      showToast(`已读取文件: ${file.name} (${(text.length / 1024).toFixed(1)} KB)`, 'success');
+    };
+    reader.readAsText(file);
+  } else if (ext === 'docx' || ext === 'pdf') {
+    // 通过后端解析
+    uploadAndParseFile(file);
+  } else {
+    showToast('不支持的文件格式，请使用 txt / md / json / docx / pdf', 'error');
+  }
+  input.value = '';
+}
+
+async function uploadAndParseFile(file) {
+  const btn = document.getElementById('ai-generate-btn');
+  const origText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = '正在解析文件...';
+
+  try {
+    const formData = new FormData();
+    formData.append('file', file);
+    const resp = await fetch('/api/ai/parse-file', { method: 'POST', body: formData });
+    if (!resp.ok) {
+      const err = await resp.json();
+      throw new Error(err.error || '文件解析失败');
+    }
+    const data = await resp.json();
+    const ta = document.getElementById('ai-input-text');
+    if (ta) ta.value = data.text;
+    document.getElementById('ai-input-area')?.classList.remove('hidden');
+    document.getElementById('ai-file-name') && (document.getElementById('ai-file-name').textContent = file.name);
+    showToast(`已解析: ${file.name} (${(data.text.length / 1024).toFixed(1)} KB)`, 'success');
+  } catch (err) {
+    showToast('文件解析失败：' + err.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = origText;
   }
 }
 
