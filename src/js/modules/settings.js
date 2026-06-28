@@ -41,7 +41,7 @@ export function renderSettings() {
 
   container.innerHTML = `
     <div class="settings-section">
-      <h3>🤖 AI 服务商配置</h3>
+      <h3>AI 服务商配置</h3>
       <p class="text-sm text-muted mb-4">配置 AI 服务商后，可使用 AI 自动生成题库。支持任意 OpenAI-compatible API。</p>
 
       <div id="model-list">
@@ -95,7 +95,7 @@ export function renderSettings() {
     </div>
 
     <div class="settings-section mt-4">
-      <h3>⚙️ MFAW 算法参数</h3>
+      <h3>MFAW 算法参数</h3>
       <p class="text-sm text-muted mb-4">调节加权随机刷题的四个因子权重（范围 0-1）</p>
       <div class="form-group" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
         ${[

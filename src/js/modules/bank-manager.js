@@ -72,7 +72,7 @@ export function renderBankList() {
 
   if (state.banks.length === 0) {
     container.innerHTML = `<div class="text-center" style="padding:2rem;color:var(--text-light);">
-      <p>📭 暂无题库</p>
+      <p>暂无题库</p>
       <p class="text-sm">导入本地 JSON 题库文件、粘贴 JSON 文本、或用 AI 生成题库</p>
     </div>`;
     return;
@@ -243,7 +243,7 @@ export async function aiGenerateQuiz() {
     showToast('AI 生成失败：' + err.message, 'error');
   } finally {
     btn.disabled = false;
-    btn.textContent = '🤖 AI 生成题库';
+    btn.textContent = 'AI 生成题库';
   }
 }
 

@@ -23,8 +23,8 @@
     </nav>
     <div class="user-actions">
       <span class="badge badge-primary" id="header-bank-name" title="当前题库">未选择题库</span>
-      <button class="btn btn-outline" id="export-btn">⬇ 导出</button>
-      <button class="btn btn-outline" id="import-btn">⬆ 导入</button>
+      <button class="btn btn-outline" id="export-btn">导出</button>
+      <button class="btn btn-outline" id="import-btn">导入</button>
       <input type="file" id="importFile" style="display:none;" accept=".json">
     </div>
   </div>
@@ -55,18 +55,18 @@
 
     <!-- 题库管理 -->
     <div class="bank-panel">
-      <h3>📚 题库管理</h3>
+      <h3>题库管理</h3>
       <div class="bank-list" id="bank-list-container">
         <div class="text-center" style="padding:2rem;color:var(--text-light);">
-          <p>📭 暂无题库</p>
+          <p>暂无题库</p>
           <p class="text-sm">导入 JSON 题库文件、粘贴 JSON 文本、或用 AI 生成题库</p>
         </div>
       </div>
       <div class="flex flex-wrap gap-4">
-        <button class="btn btn-outline" id="import-btn2">⬆ 导入题库文件</button>
-        <button class="btn btn-outline" id="paste-import-btn">📋 粘贴 JSON 文本</button>
-        <button class="btn btn-outline" id="ai-generate-btn">🤖 AI 生成题库</button>
-        <button class="btn btn-danger" id="delete-all-btn" style="margin-left:auto;">🗑 清除所有题库</button>
+        <button class="btn btn-outline" id="import-btn2">导入题库文件</button>
+        <button class="btn btn-outline" id="paste-import-btn">粘贴 JSON 文本</button>
+        <button class="btn btn-outline" id="ai-generate-btn">AI 生成题库</button>
+        <button class="btn btn-danger" id="delete-all-btn" style="margin-left:auto;">清除所有题库</button>
       </div>
 
       <!-- AI 输入区 -->
@@ -76,9 +76,9 @@
 
       <!-- JSON 模板 -->
       <div class="template-section">
-        <h4>📋 JSON 题库格式参考</h4>
+        <h4>JSON 题库格式参考</h4>
         <p class="text-sm text-muted" style="margin-bottom:0.5rem;">请按此格式准备题库文件，或参考此格式手动创建</p>
-        <button class="btn btn-outline" id="copy-template-btn" style="margin-bottom:0.5rem;">📋 复制模板</button>
+        <button class="btn btn-outline" id="copy-template-btn" style="margin-bottom:0.5rem;">复制模板</button>
         <pre><code id="template-code"></code></pre>
         <p class="text-sm text-muted mt-2">
           <strong>字段：</strong>
@@ -94,17 +94,17 @@
 
     <!-- AI 转换提示词模板 -->
     <div class="template-section" style="margin-top:1.5rem;border-top:1px solid var(--border-color);padding-top:1.5rem;">
-      <h4>🤖 AI 题库转换提示词 <span class="tag tag-muted" style="font-size:0.7rem;">复制给 ChatGPT / DeepSeek</span></h4>
+      <h4>AI 题库转换提示词 <span class="tag tag-muted" style="font-size:0.7rem;">复制给 ChatGPT / DeepSeek</span></h4>
       <p class="text-sm text-muted" style="margin-bottom:0.5rem;">
         复制下方提示词，粘贴到任意 AI（ChatGPT、DeepSeek、Kimi 等），然后发送你的题目，AI 将自动生成符合格式的 JSON 题库。
       </p>
-      <button class="btn btn-outline" id="copy-prompt-btn" style="margin-bottom:0.5rem;">📋 复制提示词</button>
+      <button class="btn btn-outline" id="copy-prompt-btn" style="margin-bottom:0.5rem;">复制提示词</button>
       <pre style="background:var(--bg-code);color:#e2e8f0;padding:1rem;border-radius:8px;overflow-x:auto;font-size:0.78rem;line-height:1.5;max-height:350px;overflow-y:auto;"><code id="prompt-code"></code></pre>
     </div>
 
     <!-- 刷题提示 -->
     <div style="text-align:center;margin-top:3rem;color:var(--text-light);">
-      <h3>🚀 开始刷题</h3>
+      <h3>开始刷题</h3>
       <p class="mt-2">支持键盘快捷键：<span class="kbd-hint">1-4</span> 选择答案 · <span class="kbd-hint">→/n</span> 下一题 · <span class="kbd-hint">←/p</span> 上一题</p>
       <p class="text-sm mt-2">MFAW 智能加权模式会根据你的答题表现，自动优先安排高频错题和薄弱知识点</p>
     </div>
@@ -119,13 +119,13 @@
           <span class="tag tag-muted" id="q-cat">知识点</span>
           <span class="tag" id="q-index-badge" style="background:#e2e8f0">#1</span>
         </div>
-        <button class="icon-btn" id="fav-btn">★</button>
+        <button class="icon-btn" id="fav-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 1.5l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></button>
       </div>
       <div class="q-text" id="q-content">题目加载中...</div>
       <div class="options-grid" id="options-area"></div>
 
       <div class="explanation-box" id="explanation-area">
-        <div class="exp-title" style="font-weight:700;color:#b45309;margin-bottom:0.5rem;">💡 答案解析</div>
+        <div class="exp-title" style="font-weight:700;color:#b45309;margin-bottom:0.5rem;">答案解析</div>
         <div id="exp-text"></div>
       </div>
 
@@ -139,7 +139,7 @@
         </div>
         <div class="flex gap-4">
           <button class="btn btn-outline" id="prev-btn">⬅ 上一题</button>
-          <button class="btn btn-primary" id="next-btn">下一题 ➜</button>
+          <button class="btn btn-primary" id="next-btn">下一题 →</button>
         </div>
       </div>
     </div>

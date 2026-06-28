@@ -59,11 +59,11 @@ function bindGlobalEvents() {
     aiGenBtn.addEventListener('click', () => {
       if (aiInputArea.classList.contains('hidden')) {
         aiInputArea.classList.remove('hidden');
-        aiGenBtn.textContent = '🚀 开始 AI 生成';
+        aiGenBtn.textContent = '开始 AI 生成';
       } else {
         aiGenerateQuiz();
         aiInputArea.classList.add('hidden');
-        aiGenBtn.textContent = '🤖 AI 生成题库';
+        aiGenBtn.textContent = 'AI 生成题库';
       }
     });
   }
