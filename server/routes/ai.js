@@ -78,13 +78,14 @@ router.post('/convert-to-quiz', async (req, res) => {
    - exp: 详细解析，包含翻译（如为英语题）、考点说明、每个选项的解释、为什么选正确答案
 2. 只提取有明确知识点的内容，不要生成无意义的题目
 3. 选项设计要有区分度，干扰项要有迷惑性
-4. 至少生成 3 道题，最多 30 道题
-5. 你的整个回复必须是一个纯 JSON 数组，以 [ 开头、以 ] 结尾
-6. 严禁使用 markdown 代码块（不要 \`\`\`json），严禁在 JSON 前后添加任何说明文字
-7. 确保 JSON 是合法可解析的（注意字符串内的引号要转义）
+4. 至少生成 10 道题，尽量覆盖文档中的所有知识点，最多不超过 120 道
+5. 每道题的解析要详尽，包含翻译（如适用）、考点说明、逐项分析
+6. 你的整个回复必须是一个纯 JSON 数组，以 [ 开头、以 ] 结尾
+7. 严禁使用 markdown 代码块，严禁在 JSON 前后添加任何说明文字
+8. 确保 JSON 是合法可解析的（注意字符串内引号转义、最后一项不要多余逗号）
 
 ## 文档内容
-${text.slice(0, 40000)}`;
+${text.slice(0, 80000)}`;
 
     console.log(`[AI-ROUTE] Converting to quiz: ${filename || 'text'} (${text.length} chars)`);
     const result = await generateAI(prompt, providerConfig);
