@@ -1,0 +1,16 @@
+{
+  "name": "aiautop",
+  "version": "2.0.0",
+  "description": "AI 智能刷题平台 — 多题库管理 + AI 辅助生成 + 自适应算法",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "dotenv": "^16.4.5"
+  },
+  "author": "Lycorius03",
+  "license": "MIT"
+}

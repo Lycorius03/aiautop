@@ -1,0 +1,57 @@
+/* ============================================================
+   AI 智能刷题平台 — Design Tokens
+   CSS 变量集中管理，全站统一引用
+   ============================================================ */
+
+:root {
+  /* 主色调 */
+  --primary-color: #2563eb;
+  --primary-light: #eff6ff;
+  --primary-dark: #1d4ed8;
+  --secondary-color: #3b82f6;
+  --accent-color: #60a5fa;
+
+  /* 文字 */
+  --text-main: #1e293b;
+  --text-light: #64748b;
+  --text-muted: #94a3b8;
+
+  /* 背景 */
+  --bg-color: #f1f5f9;
+  --card-bg: #ffffff;
+  --bg-hover: #f8fafc;
+  --bg-code: #1e293b;
+
+  /* 状态色 */
+  --success: #10b981;
+  --success-light: #ecfdf5;
+  --error: #ef4444;
+  --error-light: #fef2f2;
+  --warning: #f59e0b;
+  --warning-light: #fffbeb;
+
+  /* 边框 */
+  --border-color: #e2e8f0;
+  --border-light: #f1f5f9;
+
+  /* 圆角 */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 16px;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.12);
+
+  /* 过渡 */
+  --transition: all 0.3s ease;
+  --transition-fast: all 0.15s ease;
+
+  /* 字体 */
+  --font-sans: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+  --font-size-sm: 0.85rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+}
