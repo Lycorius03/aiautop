@@ -2,7 +2,7 @@
  * AI 智能刷题平台 — App State
  * 集中状态管理
  */
-import { storage, STORAGE_KEYS } from '../services/storage.js';
+import { storage, STORAGE_KEYS } from './services/storage.js';
 
 export class AppState {
   constructor() {
