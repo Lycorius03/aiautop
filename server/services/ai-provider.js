@@ -72,7 +72,7 @@ async function generateAI(prompt, providerConfig) {
     body: JSON.stringify({
       model,
       messages: [{ role: 'user', content: prompt }],
-      max_tokens: 65536,
+      max_tokens: 131072,
       temperature: 0.7
     }),
     signal: AbortSignal.timeout(120000)
